@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tp3_int_web_2</title>
+  </head>
+  <body>
+    <canvas class="mt-5" id="three-canvas"></canvas>
+    <header class="fixed top-0 left-0 w-full z-50">
+      <div class="flex justify-between items-center container mx-auto mt-7">
+        <div class="flex items-center gap-7">
+          <img
+            src="/images/logo_Tabiji_Travel.png"
+            alt="Torii en version logo de style animé"
+            class="max-w-25"
+          />
+          <a href="index.html" class="text-3xl text-sky-100"
+            >Tabiji Travel Japan</a
+          >
+        </div>
+        <div>
+          <nav>
+            <ul class="flex gap-20 text-md text-sky-100">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="apropos.html">A propos</a></li>
+              <li><a href="apropos.html">Nous Contacter</a></li>
+              <li>
+                <a href="reservation.html" n class="border p-2.5 rounded-3xl"
+                  >Réserver Maintenant</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="relative z-10 container mx-auto">
+      <section
+        class="min-h-screen flex items-center snap-start"
+        id="sectionHero"
+      >
+        <div class="-translate-y-28">
+          <h1 class="text-5xl font-bold text-sky-100">
+            Votre voyage <br />
+            commence ici
+          </h1>
+          <p class="mt-5 text-md text-sky-100">
+            Découvrez le Japon autrement et vivez des expériences
+            <br />inoubliables au coeur de la tradition
+          </p>
+          <div class="mt-10">
+            <a
+              href="reservation.html"
+              class="text-xl bg-[#E4464C] p-2.5 rounded-3xl text-sky-100"
+              >Réserver Maintenant</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        id="section2"
+        class="min-h-screen snap-start flex flex-row justify-center"
+      >
+        <div class="grid grid-cols-12 gap-16 translate-y-16">
+          <div class="col-span-12 translate-y-30">
+            <h2 class="text-sky-100 text-4xl text-center">
+              Découvrez le Japon autrement
+            </h2>
+          </div>
+
+          <div class="col-span-4">
+            <div
+              class="bg-[#101d38]/80 backdrop-blur-md pb-7 rounded-xl h-150"
+              id="carte1"
+            >
+              <img
+                src="images/image_immersion.jpeg"
+                alt="image de torii au milieu d'un lac"
+                class="rounded-xl w-full object-cover h-78"
+                id="carte1__image"
+              />
+              <h2 class="text-center mt-7 text-3xl text-sky-100">Immersion</h2>
+              <h3 class="text-center mt-2 text-xl text-sky-100">
+                Voyagez au-delà des incontournables.
+              </h3>
+              <hr class="w-[75%] mx-auto mt-3" />
+              <p class="text-center text-lg mt-3 w-[85%] mx-auto text-sky-100">
+                Découvrez un Japon authentique, entre traditions locales,
+                quartiers méconnus et rencontres culturelles. Sortez des
+                circuits touristiques classiques pour vivre le pays de
+                l'intérieur.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-4">
+            <div
+              class="bg-[#101d38]/80 backdrop-blur-md pb-7 rounded-xl h-150"
+              id="Carte2"
+            >
+              <img
+                src="images/image_sur_mesure.jpg"
+                alt=""
+                class="rounded-xl w-full object-cover"
+              />
+              <h2 class="text-center mt-7 text-3xl text-sky-100">Sur mesure</h2>
+              <h3 class="text-center mt-2 text-xl text-sky-100">
+                Un voyage qui vous ressemble.
+              </h3>
+              <hr class="w-[75%] mx-auto mt-3" />
+              <p class="text-center text-lg mt-3 w-[85%] mx-auto text-sky-100">
+                Chaque itinéraire est pensé selon votre rythme, vos envies et
+                vos intérêts. Des grandes villes aux paysages plus paisibles,
+                construisez une expérience adaptée à votre façon de voyager.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-4">
+            <div
+              class="bg-[#101d38]/80 backdrop-blur-md pb-7 rounded-xl h-150"
+              id="carte3"
+            >
+              <img
+                src="images/image_authenticite.jpg"
+                alt=""
+                class="rounded-xl w-full object-cover"
+              />
+              <h2 class="text-center mt-7 text-3xl text-sky-100">
+                Authenticité
+              </h2>
+              <h3 class="text-center mt-2 text-xl text-sky-100">
+                Découvrez l'essence du Japon.
+              </h3>
+              <hr class="w-[75%] mx-auto mt-3" />
+              <p class="text-center text-lg mt-3 w-[85%] mx-auto text-sky-100">
+                Plongez dans la culture japonaise à travers sa gastronomie, son
+                histoire, ses paysages et ses traditions. Des expériences
+                soigneusement choisies pour créer des souvenirs qui vont au-delà
+                des photos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="section3"
+        class="min-h-screen flex flex-row snap-start items-center justify-center"
+      >
+        <div>
+          <h2>quelque image du japon</h2>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
