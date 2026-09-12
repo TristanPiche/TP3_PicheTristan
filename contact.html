@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations | Tabiji Travel Japan</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 w-full z-50">
+      <div class="flex justify-between items-center container mx-auto mt-7">
+        <div class="flex items-center gap-7">
+          <img
+            src="/images/logo_Tabiji_Travel.png"
+            alt="Torii en version logo de style animé"
+            class="max-w-25"
+          />
+          <a href="index.html" class="text-3xl text-sky-100"
+            >Tabiji Travel Japan</a
+          >
+        </div>
+        <div>
+          <nav>
+            <ul class="flex gap-20 text-md text-sky-100">
+              <li>
+                <a
+                  href="index.html"
+                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="apropos.html"
+                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="border border-[#E4464C] text-[#E4464C] rounded-3xl p-2 transition duration-200 ease-in-out hover:bg-[#E4464C] hover:text-white"
+                  >Nous Contacter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="reservation.html"
+                  n
+                  class="border p-2.5 rounded-3xl transition duration-200 ease-in-out hover:bg-[#E4464C] hover:border-[#E4464C]"
+                  >Réserver Maintenant</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="relative z-10 container mx-auto">
+      <section
+        class="min-h-screen snap-start flex flex-col justify-center relative"
+      >
+        <!-- EN-TÊTE -->
+        <div class="mb-12">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+              01 — Nous contacter
+            </p>
+          </div>
+
+          <h2 class="text-sky-100 text-4xl">
+            Une question?
+            <span class="text-[#D98282]">Parlons-en.</span>
+          </h2>
+
+          <p class="text-sky-100/50 mt-3 max-w-xl">
+            Notre équipe est là pour vous accompagner dans la préparation de
+            votre prochain voyage au Japon.
+          </p>
+        </div>
+
+        <!-- CONTENU -->
+        <div class="grid grid-cols-12 gap-12 items-stretch">
+          <!-- ========================= -->
+          <!-- INFORMATIONS -->
+          <!-- ========================= -->
+
+          <div class="col-span-5 flex flex-col justify-center">
+            <p class="text-[#E4464C] text-xs tracking-[0.3em] mb-4">
+              TABIJI TRAVEL JAPAN
+            </p>
+
+            <h3 class="text-sky-100 text-3xl leading-tight mb-5">
+              Retrouvez-nous
+              <br />
+              <span class="text-sky-100/40">au cœur de Tokyo.</span>
+            </h3>
+
+            <p class="text-sky-100/50 leading-relaxed max-w-md mb-10">
+              Une question sur nos forfaits ou votre prochain voyage?
+              Communiquez avec notre équipe, il nous fera plaisir de vous aider.
+            </p>
+
+            <!-- ADRESSE -->
+            <div class="flex gap-5 py-5 border-b border-white/10">
+              <span class="text-[#E4464C] text-sm">01</span>
+
+              <div>
+                <p class="text-sky-100/40 text-xs tracking-[0.2em] mb-2">
+                  NOTRE BUREAU
+                </p>
+
+                <p class="text-sky-100">Shibuya, Tokyo</p>
+
+                <p class="text-sky-100/40 text-sm mt-1">Japon</p>
+              </div>
+            </div>
+
+            <!-- COURRIEL -->
+            <div class="flex gap-5 py-5 border-b border-white/10">
+              <span class="text-[#E4464C] text-sm">02</span>
+
+              <div>
+                <p class="text-sky-100/40 text-xs tracking-[0.2em] mb-2">
+                  COURRIEL
+                </p>
+
+                <a
+                  href="mailto:bonjour@tabijitravel.jp"
+                  class="text-sky-100 hover:text-[#E4464C] transition"
+                >
+                  bonjour@tabijitravel.jp
+                </a>
+              </div>
+            </div>
+
+            <!-- TÉLÉPHONE -->
+            <div class="flex gap-5 py-5">
+              <span class="text-[#E4464C] text-sm">03</span>
+
+              <div>
+                <p class="text-sky-100/40 text-xs tracking-[0.2em] mb-2">
+                  TÉLÉPHONE
+                </p>
+
+                <a
+                  href="tel:+81355501234"
+                  class="text-sky-100 hover:text-[#E4464C] transition"
+                >
+                  +81 3 5550 1234
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================= -->
+          <!-- GOOGLE MAP -->
+          <!-- ========================= -->
+
+          <div
+            class="col-span-7 min-h-125 relative rounded-3xl overflow-hidden border border-white/10 bg-[#101d38]"
+          >
+            <iframe
+              src="https://www.google.com/maps?q=Shibuya%20Tokyo%20Japan&output=embed"
+              class="absolute inset-0 w-full h-full border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Emplacement Tabiji Travel Japan"
+            ></iframe>
+
+            <!-- Petit badge -->
+            <div
+              class="absolute bottom-6 left-6 z-10 bg-[#101d38]/90 backdrop-blur-md border border-white/10 rounded-2xl px-5 py-4"
+            >
+              <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-1">東京</p>
+
+              <p class="text-sky-100">Tabiji Travel Japan</p>
+
+              <p class="text-sky-100/40 text-xs mt-1">Shibuya • Tokyo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="min-h-screen snap-start flex flex-col justify-center relative"
+      >
+        <!-- ========================= -->
+        <!-- EN-TÊTE -->
+        <!-- ========================= -->
+
+        <div class="mb-12">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+              02 — Questions fréquentes
+            </p>
+          </div>
+
+          <h2 class="text-sky-100 text-4xl">
+            Une question avant
+            <span class="text-[#D98282]">de partir ?</span>
+          </h2>
+
+          <p class="text-sky-100/50 mt-3 max-w-xl">
+            Retrouvez les réponses aux questions les plus fréquentes pour
+            préparer votre voyage au Japon en toute simplicité.
+          </p>
+        </div>
+
+        <!-- ========================= -->
+        <!-- ACCORDÉON FAQ -->
+        <!-- ========================= -->
+
+        <div
+          id="accordion-faq"
+          data-accordion="collapse"
+          class="max-w-5xl w-full space-y-3"
+        >
+          <!-- QUESTION 01 -->
+          <div
+            class="rounded-xl overflow-hidden border border-white/10 bg-[#101d38]/60"
+          >
+            <h2 id="accordion-heading-1">
+              <button
+                type="button"
+                class="group flex items-center justify-between w-full px-6 py-6 text-left bg-[#101d38]/60! hover:bg-[#18233f]/90 text-sky-100! transition duration-300 [&[aria-expanded='true']]:bg-[#18233f]"
+                data-accordion-target="#accordion-body-1"
+                aria-expanded="false"
+                aria-controls="accordion-body-1"
+              >
+                <div class="flex items-center gap-7">
+                  <span class="text-[#E4464C] text-xs tracking-[0.2em]">
+                    01
+                  </span>
+
+                  <span
+                    class="text-sky-100 text-xl group-hover:text-[#D98282] transition duration-300"
+                  >
+                    Comment fonctionne la réservation d'un voyage ?
+                  </span>
+                </div>
+
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 text-sky-100/40 rotate-180 shrink-0 group-hover:text-[#E4464C] transition duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+
+            <div
+              id="accordion-body-1"
+              class="hidden"
+              aria-labelledby="accordion-heading-1"
+            >
+              <div class="px-16 pb-6 pt-1 bg-[#18233f]">
+                <div class="w-10 h-px bg-[#E4464C]/50 mb-4"></div>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-3xl">
+                  Choisissez le forfait qui vous convient, puis cliquez sur «
+                  Réserver ». Vous pourrez ensuite nous transmettre les
+                  informations nécessaires afin que notre équipe puisse préparer
+                  votre voyage.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUESTION 02 -->
+          <div
+            class="rounded-xl overflow-hidden border border-white/10 bg-[#101d38]/60"
+          >
+            <h2 id="accordion-heading-2">
+              <button
+                type="button"
+                class="group flex items-center justify-between w-full px-6 py-6 text-left bg-[#101d38]/60! hover:bg-[#18233f]/90 text-sky-100! transition duration-300 [&[aria-expanded='true']]:bg-[#18233f]"
+                data-accordion-target="#accordion-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-body-2"
+              >
+                <div class="flex items-center gap-7">
+                  <span class="text-[#E4464C] text-xs tracking-[0.2em]">
+                    02
+                  </span>
+
+                  <span
+                    class="text-sky-100 text-xl group-hover:text-[#D98282] transition duration-300"
+                  >
+                    Est-il possible de personnaliser un forfait ?
+                  </span>
+                </div>
+
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 text-sky-100/40 rotate-180 shrink-0 group-hover:text-[#E4464C] transition duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+
+            <div
+              id="accordion-body-2"
+              class="hidden"
+              aria-labelledby="accordion-heading-2"
+            >
+              <div class="px-16 pb-6 pt-1 bg-[#18233f]">
+                <div class="w-10 h-px bg-[#E4464C]/50 mb-4"></div>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-3xl">
+                  Oui. Nos forfaits servent de point de départ à votre voyage.
+                  Certaines destinations, activités et durées peuvent être
+                  adaptées selon vos préférences afin de créer une expérience
+                  qui vous ressemble.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUESTION 03 -->
+          <div
+            class="rounded-xl overflow-hidden border border-white/10 bg-[#101d38]/60"
+          >
+            <h2 id="accordion-heading-3">
+              <button
+                type="button"
+                class="group flex items-center justify-between w-full px-6 py-6 text-left bg-[#101d38]/60! hover:bg-[#18233f]/90 text-sky-100! transition duration-300 [&[aria-expanded='true']]:bg-[#18233f]"
+                data-accordion-target="#accordion-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-body-3"
+              >
+                <div class="flex items-center gap-7">
+                  <span class="text-[#E4464C] text-xs tracking-[0.2em]">
+                    03
+                  </span>
+
+                  <span
+                    class="text-sky-100 text-xl group-hover:text-[#D98282] transition duration-300"
+                  >
+                    Les vols sont-ils inclus dans les forfaits ?
+                  </span>
+                </div>
+
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 text-sky-100/40 rotate-180 shrink-0 group-hover:text-[#E4464C] transition duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+
+            <div
+              id="accordion-body-3"
+              class="hidden"
+              aria-labelledby="accordion-heading-3"
+            >
+              <div class="px-16 pb-6 pt-1 bg-[#18233f]">
+                <div class="w-10 h-px bg-[#E4464C]/50 mb-4"></div>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-3xl">
+                  Les prix affichés représentent le prix de départ du forfait.
+                  Les vols internationaux peuvent varier selon votre ville de
+                  départ, vos dates de voyage et les options sélectionnées lors
+                  de la réservation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUESTION 04 -->
+          <div
+            class="rounded-xl overflow-hidden border border-white/10 bg-[#101d38]/60"
+          >
+            <h2 id="accordion-heading-4">
+              <button
+                type="button"
+                class="group flex items-center justify-between w-full px-6 py-6 text-left bg-[#101d38]/60! hover:bg-[#18233f]/90 text-sky-100! transition duration-300 [&[aria-expanded='true']]:bg-[#18233f]"
+                data-accordion-target="#accordion-body-4"
+                aria-expanded="false"
+                aria-controls="accordion-body-4"
+              >
+                <div class="flex items-center gap-7">
+                  <span class="text-[#E4464C] text-xs tracking-[0.2em]">
+                    04
+                  </span>
+
+                  <span
+                    class="text-sky-100 text-xl group-hover:text-[#D98282] transition duration-300"
+                  >
+                    Quelle est la meilleure période pour voyager au Japon ?
+                  </span>
+                </div>
+
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 text-sky-100/40 rotate-180 shrink-0 group-hover:text-[#E4464C] transition duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+
+            <div
+              id="accordion-body-4"
+              class="hidden"
+              aria-labelledby="accordion-heading-4"
+            >
+              <div class="px-16 pb-6 pt-1 bg-[#18233f]">
+                <div class="w-10 h-px bg-[#E4464C]/50 mb-4"></div>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-3xl">
+                  Chaque saison offre une expérience différente. Le printemps
+                  est célèbre pour les cerisiers en fleurs, l'automne pour ses
+                  couleurs, l'été pour ses festivals et l'hiver pour ses
+                  paysages enneigés et ses sources thermales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUESTION 05 -->
+          <div
+            class="rounded-xl overflow-hidden border border-white/10 bg-[#101d38]/60"
+          >
+            <h2 id="accordion-heading-5">
+              <button
+                type="button"
+                class="group flex items-center justify-between w-full px-6 py-6 text-left bg-[#101d38]/60! hover:bg-[#18233f]/90 text-sky-100! transition duration-300 [&[aria-expanded='true']]:bg-[#18233f]"
+                data-accordion-target="#accordion-body-5"
+                aria-expanded="false"
+                aria-controls="accordion-body-5"
+              >
+                <div class="flex items-center gap-7">
+                  <span class="text-[#E4464C] text-xs tracking-[0.2em]">
+                    05
+                  </span>
+
+                  <span
+                    class="text-sky-100 text-xl group-hover:text-[#D98282] transition duration-300"
+                  >
+                    Dois-je parler japonais pour voyager au Japon ?
+                  </span>
+                </div>
+
+                <svg
+                  data-accordion-icon
+                  class="w-5 h-5 text-sky-100/40 rotate-180 shrink-0 group-hover:text-[#E4464C] transition duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m5 15 7-7 7 7"
+                  />
+                </svg>
+              </button>
+            </h2>
+
+            <div
+              id="accordion-body-5"
+              class="hidden"
+              aria-labelledby="accordion-heading-5"
+            >
+              <div class="px-16 pb-6 pt-1 bg-[#18233f]">
+                <div class="w-10 h-px bg-[#E4464C]/50 mb-4"></div>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-3xl">
+                  Pas du tout. Il est tout à fait possible de voyager au Japon
+                  sans parler japonais. Quelques expressions de base peuvent
+                  toutefois rendre votre expérience encore plus agréable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="min-h-screen snap-start flex flex-col justify-center relative"
+      >
+        <!-- EN-TÊTE -->
+        <div class="mb-12">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+              03 — Leurs expériences
+            </p>
+          </div>
+
+          <h2 class="text-sky-100 text-4xl">
+            Ils ont voyagé avec nous.
+            <span class="text-[#D98282]">Ils racontent.</span>
+          </h2>
+
+          <p class="text-sky-100/50 mt-3 max-w-xl">
+            Des souvenirs, des découvertes et des expériences vécues aux quatre
+            coins du Japon.
+          </p>
+        </div>
+
+        <!-- TÉMOIGNAGES -->
+        <div class="grid grid-cols-12 gap-6">
+          <!-- ======================== -->
+          <!-- GROS TÉMOIGNAGE -->
+          <!-- ======================== -->
+          <article
+            class="col-span-7 min-h-105 relative overflow-hidden rounded-3xl bg-[#18233f]/80 border border-white/10 p-10 flex flex-col justify-between"
+          >
+            <!-- Guillemet décoratif -->
+            <span
+              class="absolute -top-8 right-8 text-[180px] leading-none text-[#E4464C]/10 select-none"
+            >
+              “
+            </span>
+
+            <div class="relative z-10">
+              <!-- Étoiles -->
+              <div class="flex gap-1 text-[#E4464C] text-lg mb-8">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+
+              <blockquote
+                class="text-sky-100 text-3xl leading-relaxed max-w-2xl"
+              >
+                « Notre voyage était incroyable. Tout était simple, bien
+                organisé et nous avons pu profiter du Japon sans nous soucier de
+                la planification. »
+              </blockquote>
+            </div>
+
+            <!-- CLIENT -->
+            <div
+              class="relative z-10 flex items-end justify-between pt-8 border-t border-white/10"
+            >
+              <div>
+                <p class="text-sky-100 text-lg">Camille & Alex</p>
+
+                <p class="text-sky-100/40 text-sm mt-1">Montréal, Canada</p>
+              </div>
+
+              <div class="text-right">
+                <p class="text-[#E4464C] text-xs tracking-[0.2em]">
+                  ENTRE DEUX MONDES
+                </p>
+
+                <p class="text-sky-100/40 text-sm mt-1">
+                  10 jours • Tokyo · Kyoto · Osaka
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ======================== -->
+          <!-- PETITS TÉMOIGNAGES -->
+          <!-- ======================== -->
+          <div class="col-span-5 grid grid-rows-2 gap-6">
+            <!-- CLIENT 02 -->
+            <article
+              class="relative overflow-hidden rounded-3xl bg-[#101d38]/70 border border-white/10 p-8 flex flex-col justify-between hover:border-[#E4464C]/40 transition duration-300"
+            >
+              <span
+                class="absolute -top-7 right-5 text-[120px] leading-none text-[#E4464C]/10 select-none"
+              >
+                “
+              </span>
+
+              <div class="relative z-10">
+                <div class="text-[#E4464C] tracking-widest mb-4">★★★★★</div>
+
+                <p class="text-sky-100/70 text-lg leading-relaxed">
+                  « Kyoto a été un véritable coup de cœur. L'itinéraire nous a
+                  permis de découvrir autant les incontournables que des
+                  endroits plus tranquilles. »
+                </p>
+              </div>
+
+              <div class="relative z-10 flex justify-between items-end mt-6">
+                <div>
+                  <p class="text-sky-100">Thomas</p>
+
+                  <p class="text-sky-100/40 text-xs mt-1">Québec, Canada</p>
+                </div>
+
+                <p class="text-[#E4464C] text-xs tracking-[0.15em]">
+                  L'ESSENTIEL
+                </p>
+              </div>
+            </article>
+
+            <!-- CLIENT 03 -->
+            <article
+              class="relative overflow-hidden rounded-3xl bg-[#101d38]/70 border border-white/10 p-8 flex flex-col justify-between hover:border-[#E4464C]/40 transition duration-300"
+            >
+              <span
+                class="absolute -top-7 right-5 text-[120px] leading-none text-[#E4464C]/10 select-none"
+              >
+                “
+              </span>
+
+              <div class="relative z-10">
+                <div class="text-[#E4464C] tracking-widest mb-4">★★★★★</div>
+
+                <p class="text-sky-100/70 text-lg leading-relaxed">
+                  « Deux semaines qu'on n'oubliera jamais. Tokyo, Osaka, Kyoto
+                  et la vue sur le mont Fuji à Hakone... chaque étape était
+                  complètement différente. »
+                </p>
+              </div>
+
+              <div class="relative z-10 flex justify-between items-end mt-6">
+                <div>
+                  <p class="text-sky-100">Sarah & Julien</p>
+
+                  <p class="text-sky-100/40 text-xs mt-1">Sherbrooke, Canada</p>
+                </div>
+
+                <p class="text-[#E4464C] text-xs tracking-[0.15em]">
+                  LE GRAND VOYAGE
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative z-10 overflow-hidden bg-[#101d38]/90 snap-start">
+      <!-- Décoration rouge -->
+      <div
+        class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-[#E4464C]/10 blur-3xl pointer-events-none"
+      ></div>
+
+      <div class="container mx-auto pt-24 pb-8">
+        <!-- Intro -->
+        <div class="mb-20">
+          <div class="flex items-center gap-4 mb-5">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em]">旅の終わり</p>
+          </div>
+
+          <h2 class="text-sky-100 text-5xl max-w-2xl leading-tight">
+            La fin du voyage,
+            <br />
+            <span class="text-sky-100/40">
+              le début d'une autre aventure.
+            </span>
+          </h2>
+        </div>
+
+        <!-- Contenu -->
+        <div class="grid grid-cols-12 gap-10">
+          <!-- Logo + description -->
+          <div class="col-span-5">
+            <div class="flex items-center gap-5">
+              <img
+                src="/images/logo_Tabiji_Travel.png"
+                alt="Tabiji Travel Japan"
+                class="w-20"
+              />
+
+              <h3 class="text-sky-100 text-2xl">Tabiji Travel Japan</h3>
+            </div>
+
+            <p class="text-sky-100/50 mt-6 max-w-md leading-relaxed">
+              Des voyages pensés pour découvrir le Japon autrement, entre
+              traditions, paysages et expériences authentiques.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="col-span-3">
+            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+              EXPLORER
+            </p>
+
+            <nav>
+              <ul class="space-y-3 text-sky-100/60">
+                <li>
+                  <a href="index.html" class="hover:text-sky-100 transition">
+                    Accueil
+                  </a>
+                </li>
+
+                <li>
+                  <a href="apropos.html" class="hover:text-sky-100 transition">
+                    Destinations
+                  </a>
+                </li>
+
+                <li>
+                  <a href="contact.html" class="hover:text-sky-100 transition">
+                    Nous contacter
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- CTA -->
+          <div class="col-span-4">
+            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+              VOTRE PROCHAIN VOYAGE
+            </p>
+
+            <h3 class="text-sky-100 text-2xl">Prêt à découvrir le Japon ?</h3>
+
+            <a
+              href="reservation.html"
+              class="inline-flex items-center gap-4 mt-7 px-6 py-3 border border-[#E4464C] rounded-full text-sky-100 hover:bg-[#E4464C] transition duration-300"
+            >
+              Réserver votre voyage
+
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="mt-20 pt-6 border-t border-white/10 flex justify-between items-center"
+        >
+          <p class="text-sky-100/30 text-sm">© 2026 Tabiji Travel Japan</p>
+
+          <div class="flex items-center gap-5">
+            <span class="text-sky-100/20 text-xs tracking-[0.3em]"> 日本 </span>
+
+            <div class="w-10 h-px bg-[#E4464C]/50"></div>
+
+            <span class="text-sky-100/30 text-sm"> JAPAN </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/cartes.js"></script>
+  </body>
+</html>
