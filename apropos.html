@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Destinations | Tabiji Travel Japan</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
+    <header class="fixed top-0 left-0 w-full z-50">
       <div class="flex justify-between items-center container mx-auto mt-7">
         <div class="flex items-center gap-7">
           <img
@@ -19,19 +19,821 @@
             >Tabiji Travel Japan</a
           >
         </div>
-        <div class="">
+        <div>
           <nav>
-            <ul class="flex gap-20 text-xl text-sky-100">
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="apropos.html">A propos</a></li>
-              <li><a href="apropos.html">Nous Contacter</a></li>
-              <li><a href="reservation.html">Réserver Maintenant</a></li>
+            <ul class="flex gap-20 text-md text-sky-100">
+              <li>
+                <a
+                  href="index.html"
+                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="apropos.html"
+                  class="border border-[#E4464C] text-[#E4464C] rounded-3xl p-2 transition duration-200 ease-in-out hover:bg-[#E4464C] hover:text-white"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  >Nous Contacter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="reservation.html"
+                  n
+                  class="border p-2.5 rounded-3xl transition duration-200 ease-in-out hover:bg-[#E4464C] hover:border-[#E4464C]"
+                  >Réserver Maintenant</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="relative z-10 container mx-auto">
+      <section
+        class="min-h-screen snap-start flex flex-col justify-center relative"
+      >
+        <div class="mb-7">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+              Nos destinations populaires
+            </p>
+          </div>
+
+          <h2 class="text-sky-100 text-3xl">
+            Explorez le Japon
+            <span class="text-[#D98282]">à votre façon.</span>
+          </h2>
+
+          <p class="text-sky-100/50 text-sm mt-2">
+            Tokyo, Kyoto ou Osaka — trois expériences uniques à découvrir.
+          </p>
+        </div>
+        <div class="grid grid-cols-12 gap-16">
+          <!-- TOKYO -->
+          <div
+            class="bg-[url('/images/tokyo.jpg')] col-span-6 h-125 bg-cover bg-center relative rounded-3xl overflow-hidden group"
+          >
+            <!-- Gradient -->
+            <div
+              class="absolute inset-0 bg-linear-to-t from-[#101d38]/95 via-[#513b5c]/25 to-transparent"
+            ></div>
+
+            <!-- Petit numéro -->
+            <div
+              class="absolute top-5 left-5 border border-white/40 bg-[#101d38]/40 backdrop-blur-sm rounded-full px-3 py-1 text-white/80 text-xs"
+            >
+              01
+            </div>
+
+            <!-- Contenu -->
+            <div
+              class="absolute bottom-0 left-0 w-full flex items-end justify-between p-7 text-white"
+            >
+              <div>
+                <p class="text-[#E4464C] text-xs tracking-[0.3em] mb-2">東京</p>
+
+                <h2 class="text-3xl">Tokyo</h2>
+
+                <p class="text-white/60 text-sm mt-1">
+                  Entre traditions et modernité
+                </p>
+              </div>
+
+              <button
+                data-city="tokyo"
+                class="open-modal flex items-center gap-3 border border-white/40 rounded-full px-5 py-2 text-sm hover:bg-[#E4464C] hover:border-[#E4464C] transition duration-300 hover:cursor-pointer"
+              >
+                Plus d'infos
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- COLONNE DE DROITE -->
+          <div class="col-span-6 h-125">
+            <div class="grid grid-rows-2 gap-6 h-full">
+              <!-- KYOTO -->
+              <div
+                class="bg-[url('/images/kyoto.jpg')] bg-cover bg-center relative rounded-3xl overflow-hidden group"
+              >
+                <!-- Gradient -->
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-[#101d38]/95 via-[#513b5c]/25 to-transparent"
+                ></div>
+
+                <!-- Petit numéro -->
+                <div
+                  class="absolute top-5 left-5 border border-white/40 bg-[#101d38]/40 backdrop-blur-sm rounded-full px-3 py-1 text-white/80 text-xs"
+                >
+                  02
+                </div>
+
+                <!-- Contenu -->
+                <div
+                  class="absolute bottom-0 left-0 w-full flex items-end justify-between p-7 text-white"
+                >
+                  <div>
+                    <p class="text-[#E4464C] text-xs tracking-[0.3em] mb-2">
+                      京都
+                    </p>
+
+                    <h2 class="text-3xl">Kyoto</h2>
+
+                    <p class="text-white/60 text-sm mt-1">
+                      Temples, traditions et sérénité
+                    </p>
+                  </div>
+
+                  <button
+                    data-city="kyoto"
+                    class="open-modal flex items-center gap-3 border border-white/40 rounded-full px-5 py-2 text-sm hover:bg-[#E4464C] hover:border-[#E4464C] transition duration-300 hover:cursor-pointer"
+                  >
+                    Plus d'infos
+                    <span>→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- OSAKA -->
+              <div
+                class="bg-[url('/images/osaka.webp')] bg-cover bg-center relative rounded-3xl overflow-hidden group"
+              >
+                <!-- Gradient -->
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-[#101d38]/95 via-[#513b5c]/25 to-transparent"
+                ></div>
+
+                <!-- Petit numéro -->
+                <div
+                  class="absolute top-5 left-5 border border-white/40 bg-[#101d38]/40 backdrop-blur-sm rounded-full px-3 py-1 text-white/80 text-xs"
+                >
+                  03
+                </div>
+
+                <!-- Contenu -->
+                <div
+                  class="absolute bottom-0 left-0 w-full flex items-end justify-between p-7 text-white"
+                >
+                  <div>
+                    <p class="text-[#E4464C] text-xs tracking-[0.3em] mb-2">
+                      大阪
+                    </p>
+
+                    <h2 class="text-3xl">Osaka</h2>
+
+                    <p class="text-white/60 text-sm mt-1">
+                      Saveurs, énergie et vie nocturne
+                    </p>
+                  </div>
+
+                  <button
+                    data-city="osaka"
+                    class="open-modal flex items-center gap-3 border border-white/40 rounded-full px-5 py-2 text-sm hover:bg-[#E4464C] hover:border-[#E4464C] hover:cursor-pointer transition duration-300"
+                  >
+                    Plus d'infos
+                    <span>→</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        id="cityModal"
+        class="fixed inset-0 z-100 hidden items-center justify-center bg-[#101d38]/80 backdrop-blur-md p-6"
+      >
+        <!-- Fenêtre -->
+        <div
+          class="relative grid grid-cols-2 max-w-5xl w-full bg-[#18233f] border border-white/10 rounded-3xl overflow-hidden shadow-2xl"
+        >
+          <!-- Image -->
+          <div id="modalImage" class="min-h-125 bg-cover bg-center"></div>
+
+          <!-- Informations -->
+          <div class="p-10 flex flex-col justify-center">
+            <button
+              id="closeModal"
+              class="absolute top-5 right-6 text-white/60 text-3xl hover:text-[#E4464C] transition hover:cursor-pointer"
+            >
+              ×
+            </button>
+
+            <p
+              id="modalJapanese"
+              class="text-[#E4464C] text-sm tracking-[0.35em] mb-3"
+            ></p>
+
+            <h2 id="modalTitle" class="text-sky-100 text-4xl mb-5"></h2>
+
+            <p
+              id="modalDescription"
+              class="text-sky-100/60 leading-relaxed"
+            ></p>
+
+            <div class="w-16 h-px bg-[#E4464C] my-7"></div>
+
+            <p id="modalHighlights" class="text-sky-100/80"></p>
+
+            <a
+              href="reservation.html"
+              class="self-start mt-8 border border-[#E4464C] rounded-full px-6 py-3 text-sky-100 hover:bg-[#E4464C] transition"
+            >
+              Découvrir cette destination →
+            </a>
+          </div>
+        </div>
+      </div>
+      <section
+        class="min-h-screen snap-start flex flex-col justify-center relative"
+      >
+        <div class="mb-10">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+              02 — Trouvez votre voyage
+            </p>
+          </div>
+
+          <h2 class="text-sky-100 text-4xl">
+            Quel Japon
+            <span class="text-[#D98282]">vous ressemble ?</span>
+          </h2>
+
+          <p class="text-sky-100/50 mt-3 max-w-xl">
+            Découvrez le Japon selon vos envies et choisissez l'expérience qui
+            fera de votre voyage un souvenir unique.
+          </p>
+        </div>
+
+        <!-- CONTENU -->
+        <div class="grid grid-cols-12 gap-12 items-stretch">
+          <!-- GRANDE IMAGE GAUCHE -->
+          <div
+            class="col-span-5 min-h-125 bg-[url('/images/japan.png')] bg-cover bg-center relative rounded-3xl overflow-hidden"
+          >
+            <!-- Gradient -->
+            <div
+              class="absolute inset-0 bg-linear-to-t from-[#101d38]/90 via-[#101d38]/20 to-transparent"
+            ></div>
+
+            <!-- Texte sur l'image -->
+            <div class="absolute bottom-0 left-0 p-8">
+              <p class="text-[#E4464C] text-xs tracking-[0.3em] mb-3">
+                日本を体験
+              </p>
+
+              <h3 class="text-sky-100 text-3xl">
+                Vivez le Japon
+                <br />
+                <span class="text-sky-100/50"> à votre rythme. </span>
+              </h3>
+            </div>
+          </div>
+
+          <!-- EXPÉRIENCES DROITE -->
+          <div class="col-span-7 flex flex-col justify-center">
+            <!-- 01 -->
+            <div class="group flex gap-7 py-7 border-b border-white/10">
+              <span class="text-[#E4464C] text-xs tracking-[0.2em] pt-2">
+                01
+              </span>
+
+              <div>
+                <h3
+                  class="text-sky-100 text-2xl mb-2 group-hover:text-[#D98282] transition duration-300"
+                >
+                  Tradition & culture
+                </h3>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-lg">
+                  Découvrez les temples, sanctuaires, quartiers historiques et
+                  traditions qui façonnent le Japon.
+                </p>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="group flex gap-7 py-7 border-b border-white/10">
+              <span class="text-[#E4464C] text-xs tracking-[0.2em] pt-2">
+                02
+              </span>
+
+              <div>
+                <h3
+                  class="text-sky-100 text-2xl mb-2 group-hover:text-[#D98282] transition duration-300"
+                >
+                  Villes & modernité
+                </h3>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-lg">
+                  Plongez dans l'énergie de Tokyo et Osaka, entre quartiers
+                  animés, architecture moderne et vie nocturne.
+                </p>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="group flex gap-7 py-7 border-b border-white/10">
+              <span class="text-[#E4464C] text-xs tracking-[0.2em] pt-2">
+                03
+              </span>
+
+              <div>
+                <h3
+                  class="text-sky-100 text-2xl mb-2 group-hover:text-[#D98282] transition duration-300"
+                >
+                  Nature & sérénité
+                </h3>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-lg">
+                  Éloignez-vous des grandes villes pour découvrir montagnes,
+                  paysages naturels, onsens et villages paisibles.
+                </p>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="group flex gap-7 pt-7">
+              <span class="text-[#E4464C] text-xs tracking-[0.2em] pt-2">
+                04
+              </span>
+
+              <div>
+                <h3
+                  class="text-sky-100 text-2xl mb-2 group-hover:text-[#D98282] transition duration-300"
+                >
+                  Gastronomie
+                </h3>
+
+                <p class="text-sky-100/50 leading-relaxed max-w-lg">
+                  Explorez le Japon à travers ses marchés, ses spécialités
+                  régionales et sa célèbre cuisine de rue.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="min-h-screen snap-start flex flex-col justify-center relative"
+      >
+        <!-- En-tête -->
+        <div class="mb-10">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+              03 — Nos forfaits
+            </p>
+          </div>
+
+          <h2 class="text-sky-100 text-4xl">
+            Des voyages pensés
+            <span class="text-[#D98282]">pour vous.</span>
+          </h2>
+
+          <p class="text-sky-100/50 mt-3 max-w-xl">
+            Choisissez l'expérience qui vous ressemble et partez à la découverte
+            du Japon.
+          </p>
+        </div>
+
+        <!-- CARTES -->
+        <div class="grid grid-cols-12 gap-7">
+          <!-- ========================= -->
+          <!-- FORFAIT 01 -->
+          <!-- ========================= -->
+
+          <article
+            class="col-span-4 bg-[#101d38]/60 border border-white/10 rounded-3xl overflow-hidden group hover:-translate-y-2 transition duration-300"
+          >
+            <!-- Image -->
+            <div
+              class="h-55 bg-[url('/images/forfait_essentiel.jpeg')] bg-cover bg-center relative"
+            >
+              <div
+                class="absolute inset-0 bg-linear-to-t from-[#101d38] to-transparent"
+              ></div>
+
+              <span
+                class="absolute top-5 left-5 border border-white/30 bg-[#101d38]/50 backdrop-blur-sm rounded-full px-3 py-1 text-white/80 text-xs"
+              >
+                01
+              </span>
+            </div>
+
+            <!-- Informations -->
+            <div class="p-7">
+              <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-3">
+                7 JOURS
+              </p>
+
+              <h3 class="text-sky-100 text-2xl mb-2">L'Essentiel</h3>
+
+              <p class="text-sky-100/50 text-sm">
+                Une première découverte du Japon entre modernité et traditions.
+              </p>
+
+              <!-- Destinations -->
+              <div class="flex gap-2 mt-5 flex-wrap">
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Tokyo
+                </span>
+
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Kyoto
+                </span>
+              </div>
+
+              <!-- Bas -->
+              <div
+                class="flex items-end justify-between mt-8 pt-6 border-t border-white/10"
+              >
+                <div>
+                  <p class="text-sky-100/40 text-xs">À partir de</p>
+
+                  <p class="text-sky-100 text-2xl">1 899 $</p>
+                </div>
+
+                <button
+                  data-package="essentiel"
+                  class="open-package-modal flex items-center gap-3 border border-[#E4464C] rounded-full px-4 py-2 text-sky-100 text-sm hover:bg-[#E4464C] transition duration-300"
+                >
+                  Voir le forfait
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================= -->
+          <!-- FORFAIT 02 -->
+          <!-- ========================= -->
+
+          <article
+            class="col-span-4 relative bg-[#101d38]/60 border border-[#E4464C]/50 rounded-3xl overflow-hidden group hover:-translate-y-2 transition duration-300"
+          >
+            <!-- Image -->
+            <div
+              class="h-55 bg-[url('/images/entre_deux_mondes.jpeg')] bg-cover bg-center relative"
+            >
+              <div
+                class="absolute inset-0 bg-linear-to-t from-[#101d38] to-transparent"
+              ></div>
+
+              <span
+                class="absolute top-5 left-5 border border-white/30 bg-[#101d38]/50 backdrop-blur-sm rounded-full px-3 py-1 text-white/80 text-xs"
+              >
+                02
+              </span>
+
+              <!-- Badge -->
+              <span
+                class="absolute top-5 right-5 bg-[#E4464C] rounded-full px-4 py-1 text-white text-xs tracking-wider"
+              >
+                POPULAIRE
+              </span>
+            </div>
+
+            <div class="p-7">
+              <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-3">
+                10 JOURS
+              </p>
+
+              <h3 class="text-sky-100 text-2xl mb-2">Entre deux mondes</h3>
+
+              <p class="text-sky-100/50 text-sm">
+                Le parfait équilibre entre grandes villes, traditions et
+                gastronomie.
+              </p>
+
+              <div class="flex gap-2 mt-5 flex-wrap">
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Tokyo
+                </span>
+
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Kyoto
+                </span>
+
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Osaka
+                </span>
+              </div>
+
+              <div
+                class="flex items-end justify-between mt-8 pt-6 border-t border-white/10"
+              >
+                <div>
+                  <p class="text-sky-100/40 text-xs">À partir de</p>
+
+                  <p class="text-sky-100 text-2xl">2 599 $</p>
+                </div>
+
+                <button
+                  data-package="deux-mondes"
+                  class="open-package-modal flex items-center gap-3 border border-[#E4464C] rounded-full px-4 py-2 text-sky-100 text-sm hover:bg-[#E4464C] transition duration-300"
+                >
+                  Voir le forfait
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================= -->
+          <!-- FORFAIT 03 -->
+          <!-- ========================= -->
+
+          <article
+            class="col-span-4 bg-[#101d38]/60 border border-white/10 rounded-3xl overflow-hidden group hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="h-55 bg-[url('/images/le_grand_voyage.jpeg')] bg-cover bg-center relative"
+            >
+              <div
+                class="absolute inset-0 bg-linear-to-t from-[#101d38] to-transparent"
+              ></div>
+
+              <span
+                class="absolute top-5 left-5 border border-white/30 bg-[#101d38]/50 backdrop-blur-sm rounded-full px-3 py-1 text-white/80 text-xs"
+              >
+                03
+              </span>
+            </div>
+
+            <div class="p-7">
+              <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-3">
+                14 JOURS
+              </p>
+
+              <h3 class="text-sky-100 text-2xl mb-2">Le Grand Voyage</h3>
+
+              <p class="text-sky-100/50 text-sm">
+                immersion complète pour découvrir plusieurs facettes du Japon.
+              </p>
+
+              <div class="flex gap-2 mt-5 flex-wrap">
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Tokyo
+                </span>
+
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Kyoto
+                </span>
+
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Osaka
+                </span>
+
+                <span
+                  class="border border-white/10 rounded-full px-3 py-1 text-sky-100/60 text-xs"
+                >
+                  Hakone
+                </span>
+              </div>
+
+              <div
+                class="flex items-end justify-between mt-8 pt-6 border-t border-white/10"
+              >
+                <div>
+                  <p class="text-sky-100/40 text-xs">À partir de</p>
+
+                  <p class="text-sky-100 text-2xl">3 499 $</p>
+                </div>
+
+                <button
+                  data-package="grand-voyage"
+                  class="open-package-modal flex items-center gap-3 border border-[#E4464C] rounded-full px-4 py-2 text-sky-100 text-sm hover:bg-[#E4464C] transition duration-300"
+                >
+                  Voir le forfait
+                  <span>→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div
+        id="package-modal"
+        class="fixed inset-0 z-100 hidden items-center justify-center bg-[#101d38]/80 backdrop-blur-sm"
+      >
+        <div
+          class="relative w-full max-w-5xl mx-6 rounded-3xl bg-[#18233f] border border-white/10 overflow-hidden shadow-2xl"
+        >
+          <!-- Bouton fermer -->
+          <button
+            id="close-package-modal"
+            class="absolute top-6 right-6 z-20 text-2xl text-white/50 hover:text-[#E4464C] transition"
+          >
+            ×
+          </button>
+
+          <div class="grid grid-cols-12">
+            <!-- ==================== -->
+            <!-- CARTE DU JAPON -->
+            <!-- ==================== -->
+
+            <div
+              class="col-span-5 bg-black flex items-center justify-center p-8"
+            >
+              <img
+                id="package-map"
+                src=""
+                alt="Carte du forfait"
+                class="w-full h-full max-h-125 object-contain"
+              />
+            </div>
+
+            <!-- ==================== -->
+            <!-- INFOS DU FORFAIT -->
+            <!-- ==================== -->
+
+            <div class="col-span-7 p-10 text-sky-100">
+              <!-- Durée -->
+              <p
+                id="package-duration"
+                class="text-[#E4464C] text-xs tracking-[0.3em] uppercase mb-3"
+              ></p>
+
+              <!-- Titre -->
+              <h2 id="package-title" class="text-4xl mb-3"></h2>
+
+              <!-- Description -->
+              <p
+                id="package-description"
+                class="text-sky-100/60 leading-relaxed mb-8"
+              ></p>
+
+              <!-- Destinations -->
+              <div class="border-y border-white/10 py-5">
+                <p class="text-xs text-[#E4464C] tracking-[0.25em] mb-2">
+                  DESTINATIONS
+                </p>
+
+                <p id="package-cities" class="text-xl"></p>
+              </div>
+
+              <!-- Prix + bouton -->
+              <div class="flex justify-between items-end mt-8">
+                <div>
+                  <p class="text-sky-100/40 text-sm">À partir de</p>
+
+                  <p id="package-price" class="text-3xl"></p>
+                </div>
+
+                <a
+                  href="reservation.html"
+                  class="flex items-center gap-3 border border-[#E4464C] rounded-full px-6 py-3 hover:bg-[#E4464C] transition duration-300"
+                >
+                  Réserver
+
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="relative z-10 overflow-hidden bg-[#101d38]/90 snap-start">
+      <!-- Décoration rouge -->
+      <div
+        class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-[#E4464C]/10 blur-3xl pointer-events-none"
+      ></div>
+
+      <div class="container mx-auto pt-24 pb-8">
+        <!-- Intro -->
+        <div class="mb-20">
+          <div class="flex items-center gap-4 mb-5">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em]">旅の終わり</p>
+          </div>
+
+          <h2 class="text-sky-100 text-5xl max-w-2xl leading-tight">
+            La fin du voyage,
+            <br />
+            <span class="text-sky-100/40">
+              le début d'une autre aventure.
+            </span>
+          </h2>
+        </div>
+
+        <!-- Contenu -->
+        <div class="grid grid-cols-12 gap-10">
+          <!-- Logo + description -->
+          <div class="col-span-5">
+            <div class="flex items-center gap-5">
+              <img
+                src="/images/logo_Tabiji_Travel.png"
+                alt="Tabiji Travel Japan"
+                class="w-20"
+              />
+
+              <h3 class="text-sky-100 text-2xl">Tabiji Travel Japan</h3>
+            </div>
+
+            <p class="text-sky-100/50 mt-6 max-w-md leading-relaxed">
+              Des voyages pensés pour découvrir le Japon autrement, entre
+              traditions, paysages et expériences authentiques.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="col-span-3">
+            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+              EXPLORER
+            </p>
+
+            <nav>
+              <ul class="space-y-3 text-sky-100/60">
+                <li>
+                  <a href="index.html" class="hover:text-sky-100 transition">
+                    Accueil
+                  </a>
+                </li>
+
+                <li>
+                  <a href="apropos.html" class="hover:text-sky-100 transition">
+                    Destinations
+                  </a>
+                </li>
+
+                <li>
+                  <a href="contact.html" class="hover:text-sky-100 transition">
+                    Nous contacter
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- CTA -->
+          <div class="col-span-4">
+            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+              VOTRE PROCHAIN VOYAGE
+            </p>
+
+            <h3 class="text-sky-100 text-2xl">Prêt à découvrir le Japon ?</h3>
+
+            <a
+              href="reservation.html"
+              class="inline-flex items-center gap-4 mt-7 px-6 py-3 border border-[#E4464C] rounded-full text-sky-100 hover:bg-[#E4464C] transition duration-300"
+            >
+              Réserver votre voyage
+
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="mt-20 pt-6 border-t border-white/10 flex justify-between items-center"
+        >
+          <p class="text-sky-100/30 text-sm">© 2026 Tabiji Travel Japan</p>
+
+          <div class="flex items-center gap-5">
+            <span class="text-sky-100/20 text-xs tracking-[0.3em]"> 日本 </span>
+
+            <div class="w-10 h-px bg-[#E4464C]/50"></div>
+
+            <span class="text-sky-100/30 text-sm"> JAPAN </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/cartes.js"></script>
   </body>
 </html>

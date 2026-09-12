@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tp3_int_web_2</title>
+    <title>Accueil | Tabjiji Travel Japan</title>
   </head>
   <body>
     <canvas class="mt-5" id="three-canvas"></canvas>
@@ -23,11 +23,32 @@
         <div>
           <nav>
             <ul class="flex gap-20 text-md text-sky-100">
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="apropos.html">A propos</a></li>
-              <li><a href="apropos.html">Nous Contacter</a></li>
               <li>
-                <a href="reservation.html" n class="border p-2.5 rounded-3xl"
+                <a
+                  href="index.html"
+                  class="border border-[#E4464C] text-[#E4464C] rounded-3xl p-2 transition duration-200 ease-in-out hover:bg-[#E4464C] hover:text-white"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="apropos.html"
+                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  >Nous Contacter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="reservation.html"
+                  n
+                  class="border p-2.5 rounded-3xl transition duration-200 ease-in-out hover:bg-[#E4464C] hover:border-[#E4464C]"
                   >Réserver Maintenant</a
                 >
               </li>
@@ -53,7 +74,7 @@
           <div class="mt-10">
             <a
               href="reservation.html"
-              class="text-xl bg-[#E4464C] p-2.5 rounded-3xl text-sky-100"
+              class="text-xl bg-[#E4464C] p-2.5 rounded-3xl text-sky-100 hover:bg-transparent border border-transparent transition duration-200 ease-in-out hover:border-[#e4464c]"
               >Réserver Maintenant</a
             >
           </div>
@@ -61,98 +82,525 @@
       </section>
       <section
         id="section2"
-        class="min-h-screen snap-start flex flex-row justify-center"
+        class="min-h-screen snap-start flex items-center justify-center relative"
       >
-        <div class="grid grid-cols-12 gap-16 translate-y-16">
-          <div class="col-span-12 translate-y-30">
-            <h2 class="text-sky-100 text-4xl text-center">
-              Découvrez le Japon autrement
-            </h2>
+        <div class="w-full">
+          <!-- Petit numéro de section -->
+          <div class="flex items-center justify-center gap-4 mb-4">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+              02 — Expériences
+            </p>
+
+            <div class="w-12 h-px bg-[#E4464C]"></div>
           </div>
 
-          <div class="col-span-4">
-            <div
-              class="bg-[#101d38]/80 backdrop-blur-md pb-7 rounded-xl h-150"
-              id="carte1"
-            >
-              <img
-                src="images/image_immersion.jpeg"
-                alt="image de torii au milieu d'un lac"
-                class="rounded-xl w-full object-cover h-78"
-                id="carte1__image"
-              />
-              <h2 class="text-center mt-7 text-3xl text-sky-100">Immersion</h2>
-              <h3 class="text-center mt-2 text-xl text-sky-100">
-                Voyagez au-delà des incontournables.
-              </h3>
-              <hr class="w-[75%] mx-auto mt-3" />
-              <p class="text-center text-lg mt-3 w-[85%] mx-auto text-sky-100">
-                Découvrez un Japon authentique, entre traditions locales,
-                quartiers méconnus et rencontres culturelles. Sortez des
-                circuits touristiques classiques pour vivre le pays de
-                l'intérieur.
-              </p>
+          <!-- Titre -->
+          <div class="text-center mb-12">
+            <h2 class="text-sky-100 text-4xl font-semibold">
+              Découvrez le Japon autrement
+            </h2>
+
+            <p class="text-sky-100/60 mt-3 text-lg">
+              Des expériences pensées pour découvrir le Japon à votre façon.
+            </p>
+          </div>
+
+          <!-- CARTES -->
+          <div class="grid grid-cols-12 gap-8">
+            <!-- CARTE 1 -->
+            <div class="col-span-4">
+              <div
+                class="group bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
+              >
+                <!-- IMAGE -->
+                <div class="relative h-60 overflow-hidden">
+                  <img
+                    src="/images/image_immersion.jpeg"
+                    alt="Torii au milieu d'un lac"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+
+                  <!-- numéro -->
+                  <span
+                    class="absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
+                  >
+                    01
+                  </span>
+                </div>
+
+                <!-- TEXTE -->
+                <div class="p-7">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-7 h-px bg-[#E4464C]"></div>
+
+                    <span class="text-[#E4464C] text-xs tracking-[0.25em]">
+                      IMMERSION
+                    </span>
+                  </div>
+
+                  <h3 class="text-3xl text-sky-100">Immersion</h3>
+
+                  <p class="mt-3 text-sky-100/60 text-lg">
+                    Voyagez au-delà des incontournables.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARTE 2 -->
+            <div class="col-span-4">
+              <div
+                class="group bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
+              >
+                <div class="relative h-60 overflow-hidden">
+                  <img
+                    src="/images/image_sur_mesure.jpg"
+                    alt="Mont Fuji et pagode"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+
+                  <span
+                    class="absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
+                  >
+                    02
+                  </span>
+                </div>
+
+                <div class="p-7">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-7 h-px bg-[#E4464C]"></div>
+
+                    <span class="text-[#E4464C] text-xs tracking-[0.25em]">
+                      SUR MESURE
+                    </span>
+                  </div>
+
+                  <h3 class="text-3xl text-sky-100">Sur mesure</h3>
+
+                  <p class="mt-3 text-sky-100/60 text-lg">
+                    Un voyage qui vous ressemble.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARTE 3 -->
+            <div class="col-span-4">
+              <div
+                class="group bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
+              >
+                <div class="relative h-60 overflow-hidden">
+                  <img
+                    src="/images/image_authenticite.jpg"
+                    alt="Rue traditionnelle japonaise"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+
+                  <span
+                    class="absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
+                  >
+                    03
+                  </span>
+                </div>
+
+                <div class="p-7">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-7 h-px bg-[#E4464C]"></div>
+
+                    <span class="text-[#E4464C] text-xs tracking-[0.25em]">
+                      AUTHENTICITÉ
+                    </span>
+                  </div>
+
+                  <h3 class="text-3xl text-sky-100">Authenticité</h3>
+
+                  <p class="mt-3 text-sky-100/60 text-lg">
+                    Découvrez l'essence du Japon.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-span-4">
-            <div
-              class="bg-[#101d38]/80 backdrop-blur-md pb-7 rounded-xl h-150"
-              id="Carte2"
-            >
-              <img
-                src="images/image_sur_mesure.jpg"
-                alt=""
-                class="rounded-xl w-full object-cover"
-              />
-              <h2 class="text-center mt-7 text-3xl text-sky-100">Sur mesure</h2>
-              <h3 class="text-center mt-2 text-xl text-sky-100">
-                Un voyage qui vous ressemble.
-              </h3>
-              <hr class="w-[75%] mx-auto mt-3" />
-              <p class="text-center text-lg mt-3 w-[85%] mx-auto text-sky-100">
-                Chaque itinéraire est pensé selon votre rythme, vos envies et
-                vos intérêts. Des grandes villes aux paysages plus paisibles,
-                construisez une expérience adaptée à votre façon de voyager.
-              </p>
-            </div>
-          </div>
-          <div class="col-span-4">
-            <div
-              class="bg-[#101d38]/80 backdrop-blur-md pb-7 rounded-xl h-150"
-              id="carte3"
-            >
-              <img
-                src="images/image_authenticite.jpg"
-                alt=""
-                class="rounded-xl w-full object-cover"
-              />
-              <h2 class="text-center mt-7 text-3xl text-sky-100">
-                Authenticité
-              </h2>
-              <h3 class="text-center mt-2 text-xl text-sky-100">
-                Découvrez l'essence du Japon.
-              </h3>
-              <hr class="w-[75%] mx-auto mt-3" />
-              <p class="text-center text-lg mt-3 w-[85%] mx-auto text-sky-100">
-                Plongez dans la culture japonaise à travers sa gastronomie, son
-                histoire, ses paysages et ses traditions. Des expériences
-                soigneusement choisies pour créer des souvenirs qui vont au-delà
-                des photos.
-              </p>
-            </div>
+
+          <!-- décoration du bas -->
+          <div class="flex items-center justify-center gap-5 mt-10">
+            <div class="w-20 h-px bg-gray-800/50"></div>
+
+            <span class="text-gray-800/60 text-sm tracking-[0.4em]">
+              旅をする
+            </span>
+
+            <div class="w-20 h-px bg-gray-800/50"></div>
           </div>
         </div>
       </section>
       <section
         id="section3"
-        class="min-h-screen flex flex-row snap-start items-center justify-center"
+        class="min-h-screen snap-start flex items-center justify-center relative"
       >
-        <div>
-          <h2>quelque image du japon</h2>
+        <div class="w-full">
+          <!-- Numéro de section -->
+          <div class="flex items-center justify-center gap-4 mb-4">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+              03 — Inspiration
+            </p>
+
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+          </div>
+
+          <!-- Titre -->
+          <div class="text-center mb-10">
+            <h2 class="text-sky-100 text-4xl font-semibold">
+              Le Japon sous toutes ses facettes
+            </h2>
+
+            <p class="text-sky-100/60 mt-3 text-lg">
+              Des paysages uniques, entre traditions et modernité.
+            </p>
+          </div>
+
+          <!-- Zone du carousel -->
+          <div class="relative max-w-5xl mx-auto">
+            <!-- Petit texte décoratif vertical gauche -->
+            <div
+              class="absolute -left-16 top-1/2 -translate-y-1/2 hidden xl:flex flex-col items-center gap-4"
+            >
+              <span
+                class="text-sky-100/50 text-xs tracking-[0.3em] [writing-mode:vertical-rl]"
+              >
+                日本を発見
+              </span>
+
+              <div class="w-px h-20 bg-sky-100/20"></div>
+            </div>
+
+            <!-- Cadre extérieur -->
+            <div
+              class="relative p-3 bg-[#101d38]/40 backdrop-blur-sm border border-white/10 rounded-2xl"
+            >
+              <!-- Accent coin supérieur gauche -->
+              <div
+                class="absolute -top-px -left-px w-20 h-20 border-t-2 border-l-2 border-[#E4464C] rounded-tl-2xl z-30 pointer-events-none"
+              ></div>
+
+              <!-- Accent coin inférieur droit -->
+              <div
+                class="absolute -bottom-px -right-px w-20 h-20 border-b-2 border-r-2 border-[#E4464C] rounded-br-2xl z-30 pointer-events-none"
+              ></div>
+
+              <!-- FLOWBITE CAROUSEL -->
+              <div
+                id="default-carousel"
+                class="relative w-full"
+                data-carousel="slide"
+              >
+                <!-- Carousel wrapper -->
+                <div class="relative h-125 overflow-hidden rounded-xl">
+                  <!-- IMAGE 1 -->
+                  <div
+                    class="duration-700 ease-in-out"
+                    data-carousel-item="active"
+                  >
+                    <img
+                      src="/images/image1.jpeg"
+                      class="absolute block w-full h-full object-cover"
+                      alt="Paysage du Japon"
+                    />
+
+                    <!-- léger gradient sur l'image -->
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
+                    ></div>
+                  </div>
+
+                  <!-- IMAGE 2 -->
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="/images/image2.jpeg"
+                      class="absolute block w-full h-full object-cover"
+                      alt="Paysage du Japon"
+                    />
+
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
+                    ></div>
+                  </div>
+
+                  <!-- IMAGE 3 -->
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="/images/image3.jpeg"
+                      class="absolute block w-full h-full object-cover"
+                      alt="Paysage du Japon"
+                    />
+
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
+                    ></div>
+                  </div>
+
+                  <!-- IMAGE 4 -->
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="/images/image4.jpeg"
+                      class="absolute block w-full h-full object-cover"
+                      alt="Paysage du Japon"
+                    />
+
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
+                    ></div>
+                  </div>
+
+                  <!-- IMAGE 5 -->
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="/images/image5.jpeg"
+                      class="absolute block w-full h-full object-cover"
+                      alt="Paysage du Japon"
+                    />
+
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Indicateurs -->
+                <div
+                  class="absolute z-30 flex -translate-x-1/2 bottom-6 left-1/2 space-x-3"
+                >
+                  <button
+                    type="button"
+                    class="w-2.5 h-2.5 rounded-full"
+                    aria-label="Slide 1"
+                    data-carousel-slide-to="0"
+                  ></button>
+
+                  <button
+                    type="button"
+                    class="w-2.5 h-2.5 rounded-full"
+                    aria-label="Slide 2"
+                    data-carousel-slide-to="1"
+                  ></button>
+
+                  <button
+                    type="button"
+                    class="w-2.5 h-2.5 rounded-full"
+                    aria-label="Slide 3"
+                    data-carousel-slide-to="2"
+                  ></button>
+
+                  <button
+                    type="button"
+                    class="w-2.5 h-2.5 rounded-full"
+                    aria-label="Slide 4"
+                    data-carousel-slide-to="3"
+                  ></button>
+
+                  <button
+                    type="button"
+                    class="w-2.5 h-2.5 rounded-full"
+                    aria-label="Slide 5"
+                    data-carousel-slide-to="4"
+                  ></button>
+                </div>
+
+                <!-- Bouton précédent -->
+                <button
+                  type="button"
+                  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-5 cursor-pointer group"
+                  data-carousel-prev
+                >
+                  <span
+                    class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#101d38]/50 border border-white/20 backdrop-blur-md group-hover:bg-[#E4464C] transition"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 1 1 5l4 4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <!-- Bouton suivant -->
+                <button
+                  type="button"
+                  class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-5 cursor-pointer group"
+                  data-carousel-next
+                >
+                  <span
+                    class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#101d38]/50 border border-white/20 backdrop-blur-md group-hover:bg-[#E4464C] transition"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 9 4-4-4-4"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Petit détail sous le carousel -->
+            <div class="flex items-center justify-between mt-5 px-3">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-px bg-[#E4464C]"></div>
+
+                <p class="text-sky-100/50 text-xs tracking-[0.25em] uppercase">
+                  Tabiji Travel Japan
+                </p>
+              </div>
+
+              <p class="text-sky-100/50 text-sm">日本 • JAPAN</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="relative z-10 overflow-hidden bg-[#101d38]/90 snap-start">
+      <!-- Décoration rouge -->
+      <div
+        class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-[#E4464C]/10 blur-3xl pointer-events-none"
+      ></div>
+
+      <div class="container mx-auto pt-24 pb-8">
+        <!-- Intro -->
+        <div class="mb-20">
+          <div class="flex items-center gap-4 mb-5">
+            <div class="w-12 h-px bg-[#E4464C]"></div>
+
+            <p class="text-[#E4464C] text-sm tracking-[0.35em]">旅の終わり</p>
+          </div>
+
+          <h2 class="text-sky-100 text-5xl max-w-2xl leading-tight">
+            La fin du voyage,
+            <br />
+            <span class="text-sky-100/40">
+              le début d'une autre aventure.
+            </span>
+          </h2>
+        </div>
+
+        <!-- Contenu -->
+        <div class="grid grid-cols-12 gap-10">
+          <!-- Logo + description -->
+          <div class="col-span-5">
+            <div class="flex items-center gap-5">
+              <img
+                src="/images/logo_Tabiji_Travel.png"
+                alt="Tabiji Travel Japan"
+                class="w-20"
+              />
+
+              <h3 class="text-sky-100 text-2xl">Tabiji Travel Japan</h3>
+            </div>
+
+            <p class="text-sky-100/50 mt-6 max-w-md leading-relaxed">
+              Des voyages pensés pour découvrir le Japon autrement, entre
+              traditions, paysages et expériences authentiques.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="col-span-3">
+            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+              EXPLORER
+            </p>
+
+            <nav>
+              <ul class="space-y-3 text-sky-100/60">
+                <li>
+                  <a href="index.html" class="hover:text-sky-100 transition">
+                    Accueil
+                  </a>
+                </li>
+
+                <li>
+                  <a href="apropos.html" class="hover:text-sky-100 transition">
+                    Destinations
+                  </a>
+                </li>
+
+                <li>
+                  <a href="contact.html" class="hover:text-sky-100 transition">
+                    Nous contacter
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- CTA -->
+          <div class="col-span-4">
+            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+              VOTRE PROCHAIN VOYAGE
+            </p>
+
+            <h3 class="text-sky-100 text-2xl">Prêt à découvrir le Japon ?</h3>
+
+            <a
+              href="reservation.html"
+              class="inline-flex items-center gap-4 mt-7 px-6 py-3 border border-[#E4464C] rounded-full text-sky-100 hover:bg-[#E4464C] transition duration-300"
+            >
+              Réserver votre voyage
+
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="mt-20 pt-6 border-t border-white/10 flex justify-between items-center"
+        >
+          <p class="text-sky-100/30 text-sm">© 2026 Tabiji Travel Japan</p>
+
+          <div class="flex items-center gap-5">
+            <span class="text-sky-100/20 text-xs tracking-[0.3em]"> 日本 </span>
+
+            <div class="w-10 h-px bg-[#E4464C]/50"></div>
+
+            <span class="text-sky-100/30 text-sm"> JAPAN </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,7 @@
+@import "flowbite/src/themes/default";
 @import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
 
 html {
   scroll-snap-type: y mandatory;
@@ -10,8 +13,27 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+
   background: linear-gradient(to bottom, #101d38 0%, #293a55 55%, #8b707a 100%);
+
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("/images/image-fond.png");
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.2; /* 👈 change ça */
+
+  pointer-events: none;
+  z-index: 0;
 }
 
 body {
