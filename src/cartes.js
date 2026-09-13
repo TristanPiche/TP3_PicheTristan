@@ -1,15 +1,13 @@
 import "./style.css";
 import "flowbite";
 
-// ======================================================
-// DESTINATIONS
-// ======================================================
+const base = import.meta.env.BASE_URL;
 
 const destinations = {
   tokyo: {
     title: "Tokyo",
     japanese: "東京",
-    image: "/images/tokyo.jpg",
+    image: `${base}images/tokyo.jpg`,
     description:
       "Découvrez une métropole où temples historiques, quartiers animés et architecture moderne se rencontrent.",
     highlights: "À découvrir — Shibuya • Asakusa • Shinjuku • Akihabara",
@@ -18,7 +16,7 @@ const destinations = {
   kyoto: {
     title: "Kyoto",
     japanese: "京都",
-    image: "/images/kyoto.jpg",
+    image: `${base}images/kyoto.jpg`,
     description:
       "Plongez au cœur du Japon traditionnel entre temples, sanctuaires, jardins et quartiers historiques.",
     highlights:
@@ -28,14 +26,12 @@ const destinations = {
   osaka: {
     title: "Osaka",
     japanese: "大阪",
-    image: "/images/osaka.webp",
+    image: `${base}images/osaka.webp`,
     description:
       "Découvrez une ville vivante réputée pour sa gastronomie, son ambiance chaleureuse et sa vie nocturne.",
     highlights: "À découvrir — Dotonbori • Château d'Osaka • Shinsekai • Umeda",
   },
 };
-
-// Éléments du modal destination
 
 const cityModal = document.querySelector("#cityModal");
 const closeCityModal = document.querySelector("#closeModal");
@@ -45,8 +41,6 @@ const cityModalJapanese = document.querySelector("#modalJapanese");
 const cityModalDescription = document.querySelector("#modalDescription");
 const cityModalHighlights = document.querySelector("#modalHighlights");
 const cityModalImage = document.querySelector("#modalImage");
-
-// Boutons pour ouvrir les destinations
 
 document.querySelectorAll(".open-modal").forEach((button) => {
   button.addEventListener("click", () => {
@@ -77,16 +71,12 @@ document.querySelectorAll(".open-modal").forEach((button) => {
   });
 });
 
-// Fermer le modal destination
-
 if (closeCityModal && cityModal) {
   closeCityModal.addEventListener("click", () => {
     cityModal.classList.add("hidden");
     cityModal.classList.remove("flex");
   });
 }
-
-// Fermer en cliquant à l'extérieur
 
 if (cityModal) {
   cityModal.addEventListener("click", (event) => {
@@ -97,10 +87,6 @@ if (cityModal) {
   });
 }
 
-// ======================================================
-// FORFAITS
-// ======================================================
-
 const packages = {
   essentiel: {
     duration: "7 jours",
@@ -109,7 +95,7 @@ const packages = {
       "Une première découverte du Japon entre modernité, traditions et incontournables.",
     cities: "Tokyo • Kyoto",
     price: "1 899 $",
-    map: "/images/tokyo_kyoto.png",
+    map: `${base}images/tokyo_kyoto.png`,
   },
 
   "deux-mondes": {
@@ -119,7 +105,7 @@ const packages = {
       "L'équilibre parfait entre l'énergie des grandes villes et le Japon traditionnel.",
     cities: "Tokyo • Kyoto • Osaka",
     price: "2 599 $",
-    map: "/images/tokyo_kyoto_osaka.png",
+    map: `${base}images/tokyo_kyoto_osaka.png`,
   },
 
   "grand-voyage": {
@@ -129,7 +115,7 @@ const packages = {
       "Une immersion complète pour découvrir plusieurs facettes du Japon.",
     cities: "Tokyo • Kyoto • Osaka • Hakone",
     price: "3 499 $",
-    map: "/images/tokyo_kyoto_osaka_hakone.png",
+    map: `${base}images/tokyo_kyoto_osaka_hakone.png`,
   },
 };
 
@@ -190,10 +176,6 @@ if (packageModal) {
   });
 }
 
-// ======================================================
-// FORMULAIRE DE RÉSERVATION
-// ======================================================
-
 const reservationForm = document.querySelector("#reservation-form");
 
 if (reservationForm) {
@@ -203,10 +185,6 @@ if (reservationForm) {
     clearErrors();
 
     let formIsValid = true;
-
-    // ==================================================
-    // 01 — FORFAIT
-    // ==================================================
 
     const selectedPackage = reservationForm.querySelector(
       'input[name="forfait"]:checked',
@@ -222,22 +200,13 @@ if (reservationForm) {
       showError(firstPackage, "Veuillez sélectionner un forfait.");
     }
 
-    // ==================================================
-    // 02 — INFORMATIONS DU VOYAGE
-    // ==================================================
-
     const departureDate = reservationForm.querySelector("#date-depart");
     const travelers = reservationForm.querySelector("#voyageurs");
     const travelType = reservationForm.querySelector("#type-voyage");
     const budget = reservationForm.querySelector("#budget");
-
-    // NOUVEAUX CHAMPS
     const accommodation = reservationForm.querySelector("#hebergement");
     const pace = reservationForm.querySelector("#rythme");
-
     const preferences = reservationForm.querySelector("#preferences");
-
-    // DATE DE DÉPART
 
     if (!departureDate.value) {
       formIsValid = false;
@@ -245,7 +214,6 @@ if (reservationForm) {
       showError(departureDate, "Veuillez choisir une date de départ.");
     } else {
       const selectedDate = new Date(`${departureDate.value}T00:00:00`);
-
       const today = new Date();
 
       today.setHours(0, 0, 0, 0);
@@ -257,15 +225,11 @@ if (reservationForm) {
       }
     }
 
-    // NOMBRE DE VOYAGEURS
-
     if (!travelers.value) {
       formIsValid = false;
 
       showError(travelers, "Veuillez sélectionner le nombre de voyageurs.");
     }
-
-    // TYPE DE VOYAGE
 
     if (!travelType.value) {
       formIsValid = false;
@@ -273,17 +237,11 @@ if (reservationForm) {
       showError(travelType, "Veuillez sélectionner un type de voyage.");
     }
 
-    // BUDGET
-
     if (!budget.value) {
       formIsValid = false;
 
       showError(budget, "Veuillez sélectionner votre budget.");
     }
-
-    // ==================================================
-    // NOUVEAU — HÉBERGEMENT
-    // ==================================================
 
     if (!accommodation.value) {
       formIsValid = false;
@@ -291,27 +249,17 @@ if (reservationForm) {
       showError(accommodation, "Veuillez sélectionner un type d'hébergement.");
     }
 
-    // ==================================================
-    // NOUVEAU — RYTHME DU VOYAGE
-    // ==================================================
-
     if (!pace.value) {
       formIsValid = false;
 
       showError(pace, "Veuillez sélectionner le rythme de votre voyage.");
     }
 
-    // ==================================================
-    // 03 — INFORMATIONS PERSONNELLES
-    // ==================================================
-
     const firstName = reservationForm.querySelector("#prenom");
     const lastName = reservationForm.querySelector("#nom");
     const email = reservationForm.querySelector("#email");
     const phone = reservationForm.querySelector("#telephone");
     const message = reservationForm.querySelector("#message");
-
-    // PRÉNOM
 
     if (firstName.value.trim() === "") {
       formIsValid = false;
@@ -323,8 +271,6 @@ if (reservationForm) {
       showError(firstName, "Le prénom doit contenir au moins 2 caractères.");
     }
 
-    // NOM
-
     if (lastName.value.trim() === "") {
       formIsValid = false;
 
@@ -334,8 +280,6 @@ if (reservationForm) {
 
       showError(lastName, "Le nom doit contenir au moins 2 caractères.");
     }
-
-    // COURRIEL
 
     if (email.value.trim() === "") {
       formIsValid = false;
@@ -347,8 +291,6 @@ if (reservationForm) {
       showError(email, "Veuillez entrer une adresse courriel valide.");
     }
 
-    // TÉLÉPHONE
-
     if (phone.value.trim() === "") {
       formIsValid = false;
 
@@ -358,10 +300,6 @@ if (reservationForm) {
 
       showError(phone, "Veuillez entrer un numéro de téléphone valide.");
     }
-
-    // ==================================================
-    // SI LE FORMULAIRE CONTIENT UNE ERREUR
-    // ==================================================
 
     if (!formIsValid) {
       const firstError = reservationForm.querySelector(".form-error");
@@ -376,10 +314,6 @@ if (reservationForm) {
       return;
     }
 
-    // ==================================================
-    // FORMULAIRE VALIDE
-    // ==================================================
-
     const interests = [
       ...reservationForm.querySelectorAll('input[name="interets"]:checked'),
     ].map((interest) => interest.value);
@@ -392,11 +326,8 @@ if (reservationForm) {
         travelers: travelers.value,
         travelType: travelType.value,
         budget: budget.value,
-
-        // NOUVEAUX CHAMPS
         accommodation: accommodation.value,
         pace: pace.value,
-
         interests: interests,
         preferences: preferences.value.trim(),
       },
@@ -418,19 +349,11 @@ if (reservationForm) {
   });
 }
 
-// ======================================================
-// VALIDATION DU COURRIEL
-// ======================================================
-
 function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   return emailRegex.test(email.trim());
 }
-
-// ======================================================
-// VALIDATION DU TÉLÉPHONE
-// ======================================================
 
 function validatePhone(phone) {
   const numbersOnly = phone.replace(/\D/g, "");
@@ -438,16 +361,10 @@ function validatePhone(phone) {
   return numbersOnly.length >= 10 && numbersOnly.length <= 15;
 }
 
-// ======================================================
-// AFFICHER UNE ERREUR
-// ======================================================
-
 function showError(element, message) {
   if (!element) {
     return;
   }
-
-  // CAS SPÉCIAL : RADIO
 
   if (element.type === "radio") {
     const section = element.closest("section");
@@ -473,8 +390,6 @@ function showError(element, message) {
     return;
   }
 
-  // INPUT / SELECT / TEXTAREA
-
   const container = element.parentElement;
 
   if (!container) {
@@ -493,10 +408,6 @@ function showError(element, message) {
 
   element.classList.add("border-[#E4464C]");
 }
-
-// ======================================================
-// SUPPRIMER LES ERREURS
-// ======================================================
 
 function clearErrors() {
   document.querySelectorAll(".form-error").forEach((error) => {
@@ -517,10 +428,6 @@ function clearErrors() {
       }
     });
 }
-
-// ======================================================
-// MESSAGE DE CONFIRMATION
-// ======================================================
 
 function showSuccess() {
   const successMessage = document.createElement("div");
