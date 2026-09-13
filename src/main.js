@@ -127,8 +127,10 @@ if (canvas) {
 
   const loader = new GLTFLoader();
 
+  const modelPath = `${import.meta.env.BASE_URL}models/Projet_TP3.glb`;
+
   loader.load(
-    "/models/Projet_TP3.glb",
+    modelPath,
 
     (gltf) => {
       const model = gltf.scene;
