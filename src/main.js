@@ -450,6 +450,12 @@ if (canvas) {
   renderer.setAnimationLoop(animate);
 }
 
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 100);
+});
+
 const travelModal = document.querySelector("#travel-help-modal");
 const travelModalButton = document.querySelector(
   '[data-modal-toggle="travel-help-modal"]',
@@ -469,5 +475,18 @@ if (travelModal && travelModalButton) {
       },
       true,
     );
+  });
+}
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((registration) => {
+        console.log("Service Worker enregistré :", registration);
+      })
+      .catch((error) => {
+        console.error("Erreur Service Worker :", error);
+      });
   });
 }
