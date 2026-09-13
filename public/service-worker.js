@@ -1,13 +1,15 @@
-const CACHE_NAME = "tabiji-cache-v3";
+const CACHE_NAME = "tabiji-cache-v4";
+
+const BASE_PATH = "/TP3_PicheTristan/";
 
 const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/apropos.html",
-  "/contact.html",
-  "/reservation.html",
-  "/manifest.json",
-  "/offline.html",
+  BASE_PATH,
+  `${BASE_PATH}index.html`,
+  `${BASE_PATH}apropos.html`,
+  `${BASE_PATH}contact.html`,
+  `${BASE_PATH}reservation.html`,
+  `${BASE_PATH}manifest.json`,
+  `${BASE_PATH}offline.html`,
 ];
 
 self.addEventListener("install", (event) => {
@@ -23,6 +25,8 @@ self.addEventListener("install", (event) => {
       })
       .then(() => {
         console.log("Tous les fichiers ont été ajoutés au cache");
+
+        return self.skipWaiting();
       })
       .catch((error) => {
         console.error("Erreur pendant la création du cache :", error);
@@ -34,20 +38,30 @@ self.addEventListener("activate", (event) => {
   console.log("Service Worker activé");
 
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            console.log("Ancien cache supprimé :", cacheName);
-            return caches.delete(cacheName);
-          }
-        }),
-      );
-    }),
+    caches
+      .keys()
+      .then((cacheNames) => {
+        return Promise.all(
+          cacheNames.map((cacheName) => {
+            if (cacheName !== CACHE_NAME) {
+              console.log("Ancien cache supprimé :", cacheName);
+
+              return caches.delete(cacheName);
+            }
+          }),
+        );
+      })
+      .then(() => {
+        return self.clients.claim();
+      }),
   );
 });
 
 self.addEventListener("fetch", (event) => {
+  if (event.request.method !== "GET") {
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {
@@ -56,11 +70,7 @@ self.addEventListener("fetch", (event) => {
 
       return fetch(event.request)
         .then((networkResponse) => {
-          if (
-            event.request.method === "GET" &&
-            networkResponse &&
-            networkResponse.status === 200
-          ) {
+          if (networkResponse && networkResponse.status === 200) {
             const responseClone = networkResponse.clone();
 
             caches.open(CACHE_NAME).then((cache) => {
@@ -72,7 +82,7 @@ self.addEventListener("fetch", (event) => {
         })
         .catch(() => {
           if (event.request.mode === "navigate") {
-            return caches.match("/offline.html");
+            return caches.match(`${BASE_PATH}offline.html`);
           }
         });
     }),
