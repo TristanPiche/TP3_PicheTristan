@@ -3,38 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Réservation | Tabiji Travel Japan</title>
-
+    <meta
+      name="description"
+      content="Réservez votre voyage au Japon avec Tabiji Travel Japan. Choisissez votre forfait et personnalisez votre séjour selon vos envies et votre budget."
+    />
+    <link rel="icon" type="image/png" href="/images/logo_Tabiji_Travel.png" />
     <link rel="stylesheet" href="src/style.css" />
   </head>
 
-  <body>
-    <!-- ====================================================== -->
-    <!-- HEADER -->
-    <!-- ====================================================== -->
-
+  <body class="font-sans">
     <header class="fixed top-0 left-0 w-full z-50">
-      <div class="flex justify-between items-center container mx-auto mt-7">
-        <div class="flex items-center gap-7">
-          <img
-            src="/images/logo_Tabiji_Travel.png"
-            alt="Torii en version logo de style animé"
-            class="max-w-25"
-          />
+      <div class="container mx-auto px-5 md:px-8 xl:px-0 mt-4 lg:mt-7">
+        <div class="grid grid-cols-12 items-center gap-4">
+          <div class="col-span-12 lg:col-span-4">
+            <div
+              class="flex items-center justify-center lg:justify-start gap-3 lg:gap-7"
+            >
+              <img
+                src="/images/logo_Tabiji_Travel.png"
+                alt="Torii en version logo de style animé"
+                class="w-14 md:w-20 lg:w-25"
+              />
 
-          <a href="index.html" class="text-3xl text-sky-100">
-            Tabiji Travel Japan
-          </a>
-        </div>
+              <a
+                href="index.html"
+                class="font-serif font-semibold text-xl md:text-2xl lg:text-3xl text-sky-100 whitespace-nowrap"
+              >
+                Tabiji Travel Japan
+              </a>
+            </div>
+          </div>
 
-        <div>
-          <nav>
-            <ul class="flex gap-20 text-md text-sky-100">
+          <nav class="col-span-12 lg:col-span-8">
+            <ul
+              class="flex flex-wrap justify-center lg:justify-end items-center gap-x-3 gap-y-2 md:gap-x-6 lg:gap-x-8 xl:gap-x-12 text-xs md:text-sm lg:text-md text-sky-100"
+            >
               <li>
                 <a
                   href="index.html"
-                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  class="block border border-transparent rounded-3xl px-3 py-2 hover:border-white transition duration-200"
                 >
                   Accueil
                 </a>
@@ -43,7 +51,7 @@
               <li>
                 <a
                   href="apropos.html"
-                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  class="block border border-transparent rounded-3xl px-3 py-2 hover:border-white transition duration-200"
                 >
                   Destinations
                 </a>
@@ -52,7 +60,7 @@
               <li>
                 <a
                   href="contact.html"
-                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
+                  class="block border border-transparent rounded-3xl px-3 py-2 hover:border-white transition duration-200"
                 >
                   Nous Contacter
                 </a>
@@ -61,7 +69,7 @@
               <li>
                 <a
                   href="reservation.html"
-                  class="border border-[#E4464C] text-[#E4464C] rounded-3xl p-2 transition duration-200 ease-in-out hover:bg-[#E4464C] hover:text-white"
+                  class="block border border-[#E4464C] text-[#E4464C] rounded-3xl px-3 py-2 transition duration-200 hover:bg-[#E4464C] hover:text-white"
                 >
                   Réserver Maintenant
                 </a>
@@ -72,53 +80,47 @@
       </div>
     </header>
 
-    <!-- ====================================================== -->
-    <!-- MAIN -->
-    <!-- ====================================================== -->
-
-    <main class="relative z-10 container mx-auto">
-      <!--
-        novalidate :
-        on désactive les messages automatiques du navigateur
-        pour faire notre propre validation avec JavaScript.
-      -->
-
+    <main class="relative z-10 container mx-auto px-4 sm:px-6 md:px-8 lg:px-0">
       <form id="reservation-form" novalidate>
-        <!-- ====================================================== -->
-        <!-- 01 — CHOISIR LE FORFAIT -->
-        <!-- ====================================================== -->
-
         <section
-          class="min-h-screen snap-start flex flex-col justify-center relative"
+          class="min-h-screen snap-start flex flex-col relative pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-44 md:pb-24 lg:pt-36 lg:pb-20"
         >
-          <div class="grid grid-cols-12 gap-6 items-end">
-            <!-- TITRE -->
+          <fieldset
+            class="min-w-0 border-0 p-0 m-0 grid grid-cols-12 gap-4 sm:gap-5 md:gap-6 lg:gap-6 items-stretch"
+          >
+            <legend class="sr-only">Choisissez votre forfait de voyage</legend>
 
-            <div class="col-span-12 mb-10">
-              <div class="flex items-center gap-4 mb-3">
-                <div class="w-12 h-px bg-[#E4464C]"></div>
+            <div class="col-span-12 mb-4 sm:mb-6 lg:mb-10">
+              <div
+                class="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-2 lg:mb-3"
+              >
+                <div class="w-7 sm:w-9 lg:w-12 h-px bg-[#E4464C]"></div>
 
-                <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+                <p
+                  class="text-[#E4464C] text-[9px] sm:text-xs lg:text-sm tracking-[0.2em] sm:tracking-[0.3em] lg:tracking-[0.35em] uppercase"
+                >
                   01 — Votre voyage
                 </p>
               </div>
 
-              <h1 class="text-sky-100 text-4xl">
+              <h1
+                class="font-serif text-sky-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+              >
                 Choisissez le voyage
-                <span class="text-[#D98282]"> qui vous ressemble. </span>
+                <span class="text-[#D98282]">qui vous ressemble.</span>
               </h1>
 
-              <p class="text-sky-100/50 mt-3 max-w-xl">
+              <p
+                class="text-sky-100/50 text-xs sm:text-sm lg:text-base mt-2 lg:mt-3 max-w-xl"
+              >
                 Trois façons de découvrir le Japon. Sélectionnez le forfait qui
                 correspond le mieux à votre aventure.
               </p>
             </div>
 
-            <!-- ================================================== -->
-            <!-- FORFAIT 01 -->
-            <!-- ================================================== -->
-
-            <label class="col-span-4 cursor-pointer group">
+            <label
+              class="col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer group"
+            >
               <input
                 type="radio"
                 name="forfait"
@@ -127,61 +129,75 @@
                 required
               />
 
-              <div
-                class="h-full min-h-105 rounded-3xl p-8 bg-[#101d38]/70 border border-white/10 hover:border-[#E4464C]/50 peer-checked:border-[#E4464C] peer-checked:bg-[#18233f] transition duration-300 flex flex-col"
+              <span
+                class="h-full min-h-72 sm:min-h-80 lg:min-h-105 rounded-2xl lg:rounded-3xl p-5 sm:p-6 lg:p-8 bg-[#101d38]/70 border border-white/10 hover:border-[#E4464C]/50 peer-checked:border-[#E4464C] peer-checked:bg-[#18233f] transition duration-300 flex flex-col"
               >
-                <div class="flex justify-between items-center">
+                <span class="flex justify-between items-center">
                   <span
-                    class="border border-white/20 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                    class="border border-white/20 rounded-full px-2.5 lg:px-3 py-1 text-[9px] sm:text-2xs lg:text-xs text-sky-100/50"
                   >
                     01
                   </span>
 
                   <span
-                    class="w-5 h-5 rounded-full border border-white/30"
+                    class="w-4 h-4 lg:w-5 lg:h-5 rounded-full border border-white/30"
                   ></span>
-                </div>
+                </span>
 
-                <div class="mt-auto">
-                  <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-3">
+                <span class="block mt-auto pt-8">
+                  <span
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.25em] mb-2 lg:mb-3"
+                  >
                     7 JOURS
-                  </p>
+                  </span>
 
-                  <h2 class="text-sky-100 text-2xl">L'Essentiel</h2>
+                  <span
+                    class="font-serif block text-sky-100 text-xl lg:text-2xl"
+                  >
+                    L'Essentiel
+                  </span>
 
-                  <p class="text-sky-100/40 mt-3 leading-relaxed">
+                  <span
+                    class="block text-sky-100/40 text-xs sm:text-sm lg:text-base mt-2 lg:mt-3 leading-relaxed"
+                  >
                     Une première découverte du Japon entre modernité, traditions
                     et incontournables.
-                  </p>
+                  </span>
 
-                  <div class="flex gap-2 mt-6">
+                  <span class="flex flex-wrap gap-2 mt-4 lg:mt-6">
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Tokyo
                     </span>
 
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Kyoto
                     </span>
-                  </div>
+                  </span>
 
-                  <div class="mt-7 pt-5 border-t border-white/10">
-                    <p class="text-sky-100/30 text-xs">À partir de</p>
+                  <span
+                    class="block mt-5 lg:mt-7 pt-4 lg:pt-5 border-t border-white/10"
+                  >
+                    <span class="block text-sky-100/30 text-2xs lg:text-xs">
+                      À partir de
+                    </span>
 
-                    <p class="text-sky-100 text-2xl mt-1">1 899 $</p>
-                  </div>
-                </div>
-              </div>
+                    <span
+                      class="font-serif block text-sky-100 text-xl lg:text-2xl mt-1"
+                    >
+                      1 899 $
+                    </span>
+                  </span>
+                </span>
+              </span>
             </label>
 
-            <!-- ================================================== -->
-            <!-- FORFAIT 02 -->
-            <!-- ================================================== -->
-
-            <label class="col-span-4 cursor-pointer group">
+            <label
+              class="col-span-12 md:col-span-6 lg:col-span-4 cursor-pointer group"
+            >
               <input
                 type="radio"
                 name="forfait"
@@ -189,69 +205,83 @@
                 class="peer sr-only"
               />
 
-              <div
-                class="relative h-full min-h-105 rounded-3xl p-8 bg-[#101d38]/70 border border-[#E4464C]/40 hover:border-[#E4464C] peer-checked:border-[#E4464C] peer-checked:bg-[#18233f] transition duration-300 flex flex-col"
+              <span
+                class="relative h-full min-h-72 sm:min-h-80 lg:min-h-105 rounded-2xl lg:rounded-3xl p-5 sm:p-6 lg:p-8 bg-[#101d38]/70 border border-[#E4464C]/40 hover:border-[#E4464C] peer-checked:border-[#E4464C] peer-checked:bg-[#18233f] transition duration-300 flex flex-col"
               >
                 <span
-                  class="absolute top-7 right-7 bg-[#E4464C] rounded-full px-4 py-1 text-white text-xs tracking-wider"
+                  class="absolute top-5 right-5 lg:top-7 lg:right-7 bg-[#E4464C] rounded-full px-3 lg:px-4 py-1 text-white text-[9px] lg:text-xs tracking-wider"
                 >
                   POPULAIRE
                 </span>
 
-                <div>
+                <span class="block">
                   <span
-                    class="border border-white/20 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                    class="border border-white/20 rounded-full px-2.5 lg:px-3 py-1 text-[9px] sm:text-2xs lg:text-xs text-sky-100/50"
                   >
                     02
                   </span>
-                </div>
+                </span>
 
-                <div class="mt-auto">
-                  <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-3">
+                <span class="block mt-auto pt-8">
+                  <span
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.25em] mb-2 lg:mb-3"
+                  >
                     10 JOURS
-                  </p>
+                  </span>
 
-                  <h2 class="text-sky-100 text-2xl">Entre deux mondes</h2>
+                  <span
+                    class="font-serif block text-sky-100 text-xl lg:text-2xl"
+                  >
+                    Entre deux mondes
+                  </span>
 
-                  <p class="text-sky-100/40 mt-3 leading-relaxed">
+                  <span
+                    class="block text-sky-100/40 text-xs sm:text-sm lg:text-base mt-2 lg:mt-3 leading-relaxed"
+                  >
                     L'équilibre parfait entre l'énergie des grandes villes et le
                     Japon traditionnel.
-                  </p>
+                  </span>
 
-                  <div class="flex gap-2 mt-6">
+                  <span class="flex flex-wrap gap-2 mt-4 lg:mt-6">
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Tokyo
                     </span>
 
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Kyoto
                     </span>
 
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Osaka
                     </span>
-                  </div>
+                  </span>
 
-                  <div class="mt-7 pt-5 border-t border-white/10">
-                    <p class="text-sky-100/30 text-xs">À partir de</p>
+                  <span
+                    class="block mt-5 lg:mt-7 pt-4 lg:pt-5 border-t border-white/10"
+                  >
+                    <span class="block text-sky-100/30 text-2xs lg:text-xs">
+                      À partir de
+                    </span>
 
-                    <p class="text-sky-100 text-2xl mt-1">2 599 $</p>
-                  </div>
-                </div>
-              </div>
+                    <span
+                      class="font-serif block text-sky-100 text-xl lg:text-2xl mt-1"
+                    >
+                      2 599 $
+                    </span>
+                  </span>
+                </span>
+              </span>
             </label>
 
-            <!-- ================================================== -->
-            <!-- FORFAIT 03 -->
-            <!-- ================================================== -->
-
-            <label class="col-span-4 cursor-pointer group">
+            <label
+              class="col-span-12 md:col-span-12 lg:col-span-4 cursor-pointer group"
+            >
               <input
                 type="radio"
                 name="forfait"
@@ -259,122 +289,144 @@
                 class="peer sr-only"
               />
 
-              <div
-                class="h-full min-h-105 rounded-3xl p-8 bg-[#101d38]/70 border border-white/10 hover:border-[#E4464C]/50 peer-checked:border-[#E4464C] peer-checked:bg-[#18233f] transition duration-300 flex flex-col"
+              <span
+                class="h-full min-h-72 sm:min-h-80 lg:min-h-105 rounded-2xl lg:rounded-3xl p-5 sm:p-6 lg:p-8 bg-[#101d38]/70 border border-white/10 hover:border-[#E4464C]/50 peer-checked:border-[#E4464C] peer-checked:bg-[#18233f] transition duration-300 flex flex-col"
               >
-                <div>
+                <span class="block">
                   <span
-                    class="border border-white/20 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                    class="border border-white/20 rounded-full px-2.5 lg:px-3 py-1 text-[9px] sm:text-2xs lg:text-xs text-sky-100/50"
                   >
                     03
                   </span>
-                </div>
+                </span>
 
-                <div class="mt-auto">
-                  <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-3">
+                <span class="block mt-auto pt-8">
+                  <span
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.25em] mb-2 lg:mb-3"
+                  >
                     14 JOURS
-                  </p>
+                  </span>
 
-                  <h2 class="text-sky-100 text-2xl">Le Grand Voyage</h2>
+                  <span
+                    class="font-serif block text-sky-100 text-xl lg:text-2xl"
+                  >
+                    Le Grand Voyage
+                  </span>
 
-                  <p class="text-sky-100/40 mt-3 leading-relaxed">
+                  <span
+                    class="block text-sky-100/40 text-xs sm:text-sm lg:text-base mt-2 lg:mt-3 leading-relaxed"
+                  >
                     Une immersion complète pour découvrir plusieurs facettes du
                     Japon.
-                  </p>
+                  </span>
 
-                  <div class="flex flex-wrap gap-2 mt-6">
+                  <span class="flex flex-wrap gap-2 mt-4 lg:mt-6">
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Tokyo
                     </span>
 
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Kyoto
                     </span>
 
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Osaka
                     </span>
 
                     <span
-                      class="border border-white/10 rounded-full px-3 py-1 text-xs text-sky-100/50"
+                      class="border border-white/10 rounded-full px-3 py-1 text-2xs lg:text-xs text-sky-100/50"
                     >
                       Hakone
                     </span>
-                  </div>
+                  </span>
 
-                  <div class="mt-7 pt-5 border-t border-white/10">
-                    <p class="text-sky-100/30 text-xs">À partir de</p>
+                  <span
+                    class="block mt-5 lg:mt-7 pt-4 lg:pt-5 border-t border-white/10"
+                  >
+                    <span class="block text-sky-100/30 text-2xs lg:text-xs">
+                      À partir de
+                    </span>
 
-                    <p class="text-sky-100 text-2xl mt-1">3 499 $</p>
-                  </div>
-                </div>
-              </div>
+                    <span
+                      class="font-serif block text-sky-100 text-xl lg:text-2xl mt-1"
+                    >
+                      3 499 $
+                    </span>
+                  </span>
+                </span>
+              </span>
             </label>
-          </div>
+          </fieldset>
         </section>
 
-        <!-- ====================================================== -->
-        <!-- 02 — DÉTAILS DU SÉJOUR -->
-        <!-- ====================================================== -->
-
         <section
-          class="min-h-screen snap-start flex flex-col justify-center relative"
+          class="section-reveal min-h-screen snap-start flex flex-col relative pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-32 md:pb-24 lg:pt-32 lg:pb-20"
         >
-          <div class="grid grid-cols-12 gap-12 items-center">
-            <!-- GAUCHE -->
+          <div
+            class="grid grid-cols-12 gap-7 sm:gap-8 md:gap-10 lg:gap-12 items-center"
+          >
+            <div class="col-span-12 lg:col-span-4">
+              <div
+                class="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-2 lg:mb-3"
+              >
+                <div class="w-7 sm:w-9 lg:w-12 h-px bg-[#E4464C]"></div>
 
-            <div class="col-span-4">
-              <div class="flex items-center gap-4 mb-3">
-                <div class="w-12 h-px bg-[#E4464C]"></div>
-
-                <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+                <p
+                  class="text-[#E4464C] text-[9px] sm:text-xs lg:text-sm tracking-[0.2em] sm:tracking-[0.3em] lg:tracking-[0.35em] uppercase"
+                >
                   02 — Votre séjour
                 </p>
               </div>
 
-              <h2 class="text-sky-100 text-4xl leading-tight">
+              <h2
+                class="font-serif text-sky-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight"
+              >
                 Donnez-nous quelques
-                <span class="text-[#D98282]"> détails. </span>
+                <span class="text-[#D98282]">détails.</span>
               </h2>
 
-              <p class="text-sky-100/50 mt-5 leading-relaxed">
+              <p
+                class="text-sky-100/50 text-xs sm:text-sm lg:text-base mt-3 sm:mt-4 lg:mt-5 leading-relaxed max-w-xl"
+              >
                 Quand souhaitez-vous partir? Avec qui? Et surtout, qu'est-ce qui
                 vous attire le plus au Japon?
               </p>
 
-              <div class="mt-12">
-                <p class="text-[#E4464C] text-4xl">日本</p>
+              <div class="mt-6 sm:mt-8 lg:mt-12">
+                <p class="text-[#E4464C] text-2xl sm:text-3xl lg:text-4xl">
+                  日本
+                </p>
 
-                <div class="flex items-center gap-4 mt-4">
-                  <div class="w-16 h-px bg-[#E4464C]/40"></div>
+                <div class="flex items-center gap-3 lg:gap-4 mt-3 lg:mt-4">
+                  <div class="w-10 sm:w-12 lg:w-16 h-px bg-[#E4464C]/40"></div>
 
-                  <p class="text-sky-100/30 text-xs tracking-[0.3em]">
+                  <p
+                    class="text-sky-100/30 text-[9px] sm:text-2xs lg:text-xs tracking-[0.3em]"
+                  >
                     YOUR JOURNEY
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- ================================================== -->
-            <!-- DROITE : FORMULAIRE -->
-            <!-- ================================================== -->
-
             <div
-              class="col-span-8 bg-[#101d38]/70 border border-white/10 rounded-3xl p-10"
+              class="col-span-12 lg:col-span-8 bg-[#101d38]/70 border border-white/10 rounded-2xl lg:rounded-3xl p-5 sm:p-7 md:p-8 lg:p-10"
             >
-              <div class="grid grid-cols-12 gap-x-8 gap-y-10">
-                <!-- DATE -->
+              <fieldset
+                class="min-w-0 border-0 p-0 m-0 grid grid-cols-12 gap-x-5 sm:gap-x-6 lg:gap-x-8 gap-y-6 sm:gap-y-8 lg:gap-y-10"
+              >
+                <legend class="sr-only">Détails de votre séjour</legend>
 
-                <div class="col-span-6">
+                <div class="col-span-12 md:col-span-6">
                   <label
                     for="date-depart"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     DATE DE DÉPART
                   </label>
@@ -384,16 +436,14 @@
                     id="date-depart"
                     name="date-depart"
                     required
-                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base focus:border-[#E4464C] focus:ring-0"
                   />
                 </div>
 
-                <!-- VOYAGEURS -->
-
-                <div class="col-span-6">
+                <div class="col-span-12 md:col-span-6">
                   <label
                     for="voyageurs"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     NOMBRE DE VOYAGEURS
                   </label>
@@ -402,28 +452,21 @@
                     id="voyageurs"
                     name="voyageurs"
                     required
-                    class="w-full px-0 py-3 bg-[#101d38] border-0 border-b border-white/20 text-sky-100 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 bg-[#101d38] border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base focus:border-[#E4464C] focus:ring-0"
                   >
                     <option value="" selected disabled>Sélectionnez</option>
-
                     <option value="1">1 voyageur</option>
-
                     <option value="2">2 voyageurs</option>
-
                     <option value="3">3 voyageurs</option>
-
                     <option value="4">4 voyageurs</option>
-
                     <option value="5+">5 voyageurs ou plus</option>
                   </select>
                 </div>
 
-                <!-- TYPE DE VOYAGE -->
-
-                <div class="col-span-6">
+                <div class="col-span-12 md:col-span-6">
                   <label
                     for="type-voyage"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     TYPE DE VOYAGE
                   </label>
@@ -432,26 +475,20 @@
                     id="type-voyage"
                     name="type-voyage"
                     required
-                    class="w-full px-0 py-3 bg-[#101d38] border-0 border-b border-white/20 text-sky-100 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 bg-[#101d38] border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base focus:border-[#E4464C] focus:ring-0"
                   >
                     <option value="" selected disabled>Sélectionnez</option>
-
                     <option value="couple">En couple</option>
-
                     <option value="amis">Entre amis</option>
-
                     <option value="famille">En famille</option>
-
                     <option value="solo">Voyage solo</option>
                   </select>
                 </div>
 
-                <!-- BUDGET -->
-
-                <div class="col-span-6">
+                <div class="col-span-12 md:col-span-6">
                   <label
                     for="budget"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     BUDGET APPROXIMATIF
                   </label>
@@ -460,30 +497,72 @@
                     id="budget"
                     name="budget"
                     required
-                    class="w-full px-0 py-3 bg-[#101d38] border-0 border-b border-white/20 text-sky-100 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 bg-[#101d38] border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base focus:border-[#E4464C] focus:ring-0"
                   >
                     <option value="" selected disabled>Sélectionnez</option>
-
                     <option value="2000-3000">2 000 $ – 3 000 $</option>
-
                     <option value="3000-4000">3 000 $ – 4 000 $</option>
-
                     <option value="4000-5000">4 000 $ – 5 000 $</option>
-
                     <option value="5000+">5 000 $ et plus</option>
                   </select>
                 </div>
 
-                <!-- INTÉRÊTS -->
+                <div class="col-span-12 md:col-span-6">
+                  <label
+                    for="hebergement"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
+                  >
+                    TYPE D'HÉBERGEMENT
+                  </label>
 
-                <div class="col-span-12 mt-2">
-                  <p class="text-[#E4464C] text-xs tracking-[0.2em] mb-5">
+                  <select
+                    id="hebergement"
+                    name="hebergement"
+                    required
+                    class="w-full px-0 py-3 bg-[#101d38] border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base focus:border-[#E4464C] focus:ring-0"
+                  >
+                    <option value="" selected disabled>Sélectionnez</option>
+                    <option value="hotel">Hôtel</option>
+                    <option value="ryokan">Ryokan traditionnel</option>
+                    <option value="auberge">Auberge</option>
+                    <option value="appartement">Appartement</option>
+                    <option value="aucune-preference">Aucune préférence</option>
+                  </select>
+                </div>
+
+                <div class="col-span-12 md:col-span-6">
+                  <label
+                    for="rythme"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
+                  >
+                    RYTHME DU VOYAGE
+                  </label>
+
+                  <select
+                    id="rythme"
+                    name="rythme"
+                    required
+                    class="w-full px-0 py-3 bg-[#101d38] border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base focus:border-[#E4464C] focus:ring-0"
+                  >
+                    <option value="" selected disabled>Sélectionnez</option>
+                    <option value="relax">Relax — prendre son temps</option>
+                    <option value="equilibre">Équilibré</option>
+                    <option value="intense">
+                      Intense — voir le plus possible
+                    </option>
+                  </select>
+                </div>
+
+                <fieldset
+                  class="col-span-12 min-w-0 border-0 p-0 m-0 mt-1 lg:mt-2"
+                >
+                  <legend
+                    class="text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-3 sm:mb-4 lg:mb-5"
+                  >
                     CE QUI VOUS ATTIRE
-                  </p>
+                  </legend>
 
-                  <div class="flex flex-wrap gap-3">
-                    <!-- GASTRONOMIE -->
-
+                  <div class="flex flex-wrap gap-2 sm:gap-3">
                     <label>
                       <input
                         type="checkbox"
@@ -493,13 +572,11 @@
                       />
 
                       <span
-                        class="block cursor-pointer px-5 py-2 rounded-full border border-white/10 text-sky-100/50 peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
+                        class="block cursor-pointer px-3 sm:px-4 lg:px-5 py-1.5 lg:py-2 rounded-full border border-white/10 text-sky-100/50 text-2xs sm:text-xs lg:text-base peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
                       >
                         Gastronomie
                       </span>
                     </label>
-
-                    <!-- CULTURE -->
 
                     <label>
                       <input
@@ -510,13 +587,11 @@
                       />
 
                       <span
-                        class="block cursor-pointer px-5 py-2 rounded-full border border-white/10 text-sky-100/50 peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
+                        class="block cursor-pointer px-3 sm:px-4 lg:px-5 py-1.5 lg:py-2 rounded-full border border-white/10 text-sky-100/50 text-2xs sm:text-xs lg:text-base peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
                       >
                         Culture
                       </span>
                     </label>
-
-                    <!-- NATURE -->
 
                     <label>
                       <input
@@ -527,13 +602,11 @@
                       />
 
                       <span
-                        class="block cursor-pointer px-5 py-2 rounded-full border border-white/10 text-sky-100/50 peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
+                        class="block cursor-pointer px-3 sm:px-4 lg:px-5 py-1.5 lg:py-2 rounded-full border border-white/10 text-sky-100/50 text-2xs sm:text-xs lg:text-base peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
                       >
                         Nature
                       </span>
                     </label>
-
-                    <!-- VIE NOCTURNE -->
 
                     <label>
                       <input
@@ -544,13 +617,11 @@
                       />
 
                       <span
-                        class="block cursor-pointer px-5 py-2 rounded-full border border-white/10 text-sky-100/50 peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
+                        class="block cursor-pointer px-3 sm:px-4 lg:px-5 py-1.5 lg:py-2 rounded-full border border-white/10 text-sky-100/50 text-2xs sm:text-xs lg:text-base peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
                       >
                         Vie nocturne
                       </span>
                     </label>
-
-                    <!-- POP CULTURE -->
 
                     <label>
                       <input
@@ -561,20 +632,18 @@
                       />
 
                       <span
-                        class="block cursor-pointer px-5 py-2 rounded-full border border-white/10 text-sky-100/50 peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
+                        class="block cursor-pointer px-3 sm:px-4 lg:px-5 py-1.5 lg:py-2 rounded-full border border-white/10 text-sky-100/50 text-2xs sm:text-xs lg:text-base peer-checked:border-[#E4464C] peer-checked:text-[#E4464C] peer-checked:bg-[#E4464C]/10 hover:border-white/30 transition"
                       >
                         Anime & pop culture
                       </span>
                     </label>
                   </div>
-                </div>
+                </fieldset>
 
-                <!-- PRÉFÉRENCES -->
-
-                <div class="col-span-12 mt-3">
+                <div class="col-span-12 mt-2 lg:mt-3">
                   <label
                     for="preferences"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     UNE ENVIE PARTICULIÈRE ?
                   </label>
@@ -585,58 +654,58 @@
                     rows="3"
                     maxlength="500"
                     placeholder="Un endroit que vous rêvez de visiter, une activité particulière..."
-                    class="w-full px-0 py-3 resize-none bg-transparent border-0 border-b border-white/20 text-sky-100 placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 resize-none bg-transparent border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
                   ></textarea>
                 </div>
-              </div>
+              </fieldset>
             </div>
           </div>
         </section>
 
-        <!-- ====================================================== -->
-        <!-- 03 — INFORMATIONS PERSONNELLES -->
-        <!-- ====================================================== -->
-
         <section
-          class="min-h-screen snap-start flex flex-col justify-center relative"
+          class="section-reveal min-h-screen snap-start flex flex-col relative pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-32 md:pb-24 lg:pt-32 lg:pb-20"
         >
-          <div class="grid grid-cols-12 gap-6">
-            <!-- TITRE -->
+          <div class="grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 mb-4 sm:mb-6 lg:mb-10">
+              <div
+                class="flex items-center gap-2 sm:gap-3 lg:gap-4 mb-2 lg:mb-3"
+              >
+                <div class="w-7 sm:w-9 lg:w-12 h-px bg-[#E4464C]"></div>
 
-            <div class="col-span-12 mb-10">
-              <div class="flex items-center gap-4 mb-3">
-                <div class="w-12 h-px bg-[#E4464C]"></div>
-
-                <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+                <p
+                  class="text-[#E4464C] text-[9px] sm:text-xs lg:text-sm tracking-[0.2em] sm:tracking-[0.3em] lg:tracking-[0.35em] uppercase"
+                >
                   03 — Finaliser
                 </p>
               </div>
 
-              <h2 class="text-sky-100 text-4xl">
+              <h2
+                class="font-serif text-sky-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+              >
                 Votre aventure
-                <span class="text-[#D98282]"> commence ici. </span>
+                <span class="text-[#D98282]">commence ici.</span>
               </h2>
 
-              <p class="text-sky-100/50 mt-3 max-w-xl">
+              <p
+                class="text-sky-100/50 text-xs sm:text-sm lg:text-base mt-2 lg:mt-3 max-w-xl"
+              >
                 Une dernière étape avant de commencer à préparer votre séjour au
                 Japon.
               </p>
             </div>
 
-            <!-- ================================================== -->
-            <!-- COORDONNÉES -->
-            <!-- ================================================== -->
-
             <div
-              class="col-span-8 rounded-3xl bg-[#101d38]/70 border border-white/10 p-10"
+              class="col-span-12 lg:col-span-8 rounded-2xl lg:rounded-3xl bg-[#101d38]/70 border border-white/10 p-5 sm:p-7 md:p-8 lg:p-10"
             >
-              <div class="grid grid-cols-12 gap-x-8 gap-y-10">
-                <!-- PRÉNOM -->
+              <fieldset
+                class="min-w-0 border-0 p-0 m-0 grid grid-cols-12 gap-x-5 sm:gap-x-6 lg:gap-x-8 gap-y-6 sm:gap-y-8 lg:gap-y-10"
+              >
+                <legend class="sr-only">Vos coordonnées</legend>
 
-                <div class="col-span-6">
+                <div class="col-span-12 md:col-span-6">
                   <label
                     for="prenom"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     PRÉNOM
                   </label>
@@ -649,16 +718,14 @@
                     required
                     minlength="2"
                     maxlength="50"
-                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
                   />
                 </div>
 
-                <!-- NOM -->
-
-                <div class="col-span-6">
+                <div class="col-span-12 md:col-span-6">
                   <label
                     for="nom"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     NOM
                   </label>
@@ -671,16 +738,14 @@
                     required
                     minlength="2"
                     maxlength="50"
-                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
                   />
                 </div>
 
-                <!-- COURRIEL -->
-
-                <div class="col-span-6">
+                <div class="col-span-12 md:col-span-6">
                   <label
                     for="email"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     COURRIEL
                   </label>
@@ -692,16 +757,14 @@
                     placeholder="vous@exemple.com"
                     required
                     maxlength="100"
-                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
                   />
                 </div>
 
-                <!-- TÉLÉPHONE -->
-
-                <div class="col-span-6">
+                <div class="col-span-12 md:col-span-6">
                   <label
                     for="telephone"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     TÉLÉPHONE
                   </label>
@@ -712,16 +775,14 @@
                     name="telephone"
                     placeholder="+1 819 555 0000"
                     required
-                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
                   />
                 </div>
-
-                <!-- MESSAGE -->
 
                 <div class="col-span-12">
                   <label
                     for="message"
-                    class="block text-[#E4464C] text-xs tracking-[0.2em] mb-3"
+                    class="block text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.2em] mb-2 lg:mb-3"
                   >
                     AUTRE CHOSE À NOUS DIRE ?
                   </label>
@@ -732,91 +793,118 @@
                     rows="3"
                     maxlength="500"
                     placeholder="Une demande particulière ou une information importante..."
-                    class="w-full px-0 py-3 resize-none bg-transparent border-0 border-b border-white/20 text-sky-100 placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
+                    class="w-full px-0 py-3 resize-none bg-transparent border-0 border-b border-white/20 text-sky-100 text-xs sm:text-sm lg:text-base placeholder:text-sky-100/20 focus:border-[#E4464C] focus:ring-0"
                   ></textarea>
                 </div>
 
-                <!-- SUBMIT -->
-
-                <div class="col-span-12 flex justify-between items-center mt-3">
-                  <p class="text-sky-100/30 text-xs max-w-sm">
+                <div
+                  class="col-span-12 grid grid-cols-12 gap-4 items-center mt-2 lg:mt-3"
+                >
+                  <p
+                    class="col-span-12 md:col-span-7 text-sky-100/30 text-2xs sm:text-xs max-w-sm"
+                  >
                     En envoyant cette demande, notre équipe pourra communiquer
                     avec vous afin de finaliser votre voyage.
                   </p>
 
-                  <button
-                    type="submit"
-                    class="flex items-center gap-4 px-7 py-3 border border-[#E4464C] rounded-full text-sky-100 hover:bg-[#E4464C] transition duration-300"
-                  >
-                    Envoyer ma demande
-
-                    <span>→</span>
-                  </button>
+                  <div class="col-span-12 md:col-span-5 flex md:justify-end">
+                    <button
+                      type="submit"
+                      class="inline-flex items-center justify-center whitespace-nowrap gap-2 lg:gap-4 px-4 sm:px-5 lg:px-7 py-2.5 lg:py-3 border border-[#E4464C] rounded-full text-sky-100 text-xs sm:text-sm lg:text-base hover:bg-[#E4464C] transition duration-300"
+                    >
+                      Envoyer ma demande
+                      <span>→</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </fieldset>
             </div>
 
-            <!-- ================================================== -->
-            <!-- RÉCAP -->
-            <!-- ================================================== -->
-
             <aside
-              class="col-span-4 rounded-3xl bg-[#18233f]/70 border border-white/10 p-8 flex flex-col justify-between"
+              class="col-span-12 lg:col-span-4 rounded-2xl lg:rounded-3xl bg-[#18233f]/70 border border-white/10 p-5 sm:p-7 lg:p-8 flex flex-col justify-between"
             >
               <div>
                 <div class="flex justify-between items-center">
-                  <p class="text-[#E4464C] text-xs tracking-[0.25em]">
+                  <p
+                    class="text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.25em]"
+                  >
                     VOTRE VOYAGE
                   </p>
 
-                  <span class="text-sky-100/20 text-xs"> 旅 </span>
+                  <span class="text-sky-100/20 text-2xs lg:text-xs">旅</span>
                 </div>
 
-                <h3 class="text-sky-100 text-2xl mt-8">Presque prêt.</h3>
+                <h3
+                  class="font-serif text-sky-100 text-xl sm:text-2xl mt-5 sm:mt-6 lg:mt-8"
+                >
+                  Presque prêt.
+                </h3>
 
-                <p class="text-sky-100/40 mt-4 leading-relaxed">
+                <p
+                  class="text-sky-100/40 text-xs sm:text-sm lg:text-base mt-3 lg:mt-4 leading-relaxed"
+                >
                   Votre demande sera transmise à notre équipe. Nous vous
                   accompagnerons ensuite pour finaliser chaque détail de votre
                   séjour.
                 </p>
 
-                <div class="mt-10 space-y-5">
-                  <!-- ÉTAPE 01 -->
-
-                  <div class="pb-5 border-b border-white/10">
-                    <p class="text-sky-100/30 text-xs tracking-[0.2em]">
+                <div class="grid grid-cols-12 gap-4 mt-6 lg:mt-10">
+                  <div
+                    class="col-span-12 md:col-span-4 lg:col-span-12 pb-4 lg:pb-5 border-b border-white/10"
+                  >
+                    <p
+                      class="text-sky-100/30 text-[9px] lg:text-xs tracking-[0.2em]"
+                    >
                       ÉTAPE 01
                     </p>
 
-                    <p class="text-sky-100/70 mt-2">Forfait sélectionné</p>
+                    <p
+                      class="text-sky-100/70 text-xs sm:text-sm lg:text-base mt-2"
+                    >
+                      Forfait sélectionné
+                    </p>
                   </div>
 
-                  <!-- ÉTAPE 02 -->
-
-                  <div class="pb-5 border-b border-white/10">
-                    <p class="text-sky-100/30 text-xs tracking-[0.2em]">
+                  <div
+                    class="col-span-12 md:col-span-4 lg:col-span-12 pb-4 lg:pb-5 border-b border-white/10"
+                  >
+                    <p
+                      class="text-sky-100/30 text-[9px] lg:text-xs tracking-[0.2em]"
+                    >
                       ÉTAPE 02
                     </p>
 
-                    <p class="text-sky-100/70 mt-2">Séjour personnalisé</p>
+                    <p
+                      class="text-sky-100/70 text-xs sm:text-sm lg:text-base mt-2"
+                    >
+                      Séjour personnalisé
+                    </p>
                   </div>
 
-                  <!-- ÉTAPE 03 -->
-
-                  <div>
-                    <p class="text-sky-100/30 text-xs tracking-[0.2em]">
+                  <div class="col-span-12 md:col-span-4 lg:col-span-12">
+                    <p
+                      class="text-sky-100/30 text-[9px] lg:text-xs tracking-[0.2em]"
+                    >
                       ÉTAPE 03
                     </p>
 
-                    <p class="text-[#E4464C] mt-2">Prêt à partir</p>
+                    <p
+                      class="text-[#E4464C] text-xs sm:text-sm lg:text-base mt-2"
+                    >
+                      Prêt à partir
+                    </p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-8 mt-10 border-t border-white/10">
-                <p class="text-[#E4464C] text-xs tracking-[0.3em]">次の旅へ</p>
+              <div class="pt-5 lg:pt-8 mt-6 lg:mt-10 border-t border-white/10">
+                <p
+                  class="text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.3em]"
+                >
+                  次の旅へ
+                </p>
 
-                <p class="text-sky-100/40 mt-2">
+                <p class="text-sky-100/40 text-xs sm:text-sm lg:text-base mt-2">
                   Vers votre prochaine aventure.
                 </p>
               </div>
@@ -826,28 +914,28 @@
       </form>
     </main>
 
-    <!-- ====================================================== -->
-    <!-- FOOTER -->
-    <!-- ====================================================== -->
-
     <footer class="relative z-10 overflow-hidden bg-[#101d38]/90 snap-start">
-      <!-- Décoration rouge -->
-
       <div
         class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-[#E4464C]/10 blur-3xl pointer-events-none"
       ></div>
 
-      <div class="container mx-auto pt-24 pb-8">
-        <!-- INTRO -->
+      <div
+        class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-0 pt-14 sm:pt-16 md:pt-20 lg:pt-24 pb-8"
+      >
+        <div class="mb-12 sm:mb-14 md:mb-16 lg:mb-20">
+          <div class="flex items-center gap-3 lg:gap-4 mb-4 lg:mb-5">
+            <div class="w-8 sm:w-10 lg:w-12 h-px bg-[#E4464C]"></div>
 
-        <div class="mb-20">
-          <div class="flex items-center gap-4 mb-5">
-            <div class="w-12 h-px bg-[#E4464C]"></div>
-
-            <p class="text-[#E4464C] text-sm tracking-[0.35em]">旅の終わり</p>
+            <p
+              class="text-[#E4464C] text-xs lg:text-sm tracking-[0.25em] lg:tracking-[0.35em]"
+            >
+              旅の終わり
+            </p>
           </div>
 
-          <h2 class="text-sky-100 text-5xl max-w-2xl leading-tight">
+          <h2
+            class="font-serif text-sky-100 text-3xl sm:text-4xl lg:text-5xl max-w-2xl leading-tight"
+          >
             La fin du voyage,
             <br />
 
@@ -857,37 +945,41 @@
           </h2>
         </div>
 
-        <!-- CONTENU -->
-
-        <div class="grid grid-cols-12 gap-10">
-          <!-- LOGO -->
-
-          <div class="col-span-5">
-            <div class="flex items-center gap-5">
+        <div class="grid grid-cols-12 gap-y-10 gap-x-5 sm:gap-8 lg:gap-10">
+          <div class="col-span-12 md:col-span-6 lg:col-span-5">
+            <div class="flex items-center gap-3 sm:gap-4 lg:gap-5">
               <img
                 src="/images/logo_Tabiji_Travel.png"
                 alt="Tabiji Travel Japan"
-                class="w-20"
+                class="w-14 sm:w-16 lg:w-20"
               />
 
-              <h3 class="text-sky-100 text-2xl">Tabiji Travel Japan</h3>
+              <h3
+                class="font-serif font-semibold text-sky-100 text-xl lg:text-2xl whitespace-nowrap"
+              >
+                Tabiji Travel Japan
+              </h3>
             </div>
 
-            <p class="text-sky-100/50 mt-6 max-w-md leading-relaxed">
+            <p
+              class="text-sky-100/50 text-xs sm:text-sm lg:text-base mt-4 lg:mt-6 max-w-md leading-relaxed"
+            >
               Des voyages pensés pour découvrir le Japon autrement, entre
               traditions, paysages et expériences authentiques.
             </p>
           </div>
 
-          <!-- NAVIGATION -->
-
-          <div class="col-span-3">
-            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+          <div class="col-span-5 md:col-span-3 lg:col-span-3">
+            <p
+              class="text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.25em] mb-4 lg:mb-6"
+            >
               EXPLORER
             </p>
 
             <nav>
-              <ul class="space-y-3 text-sky-100/60">
+              <ul
+                class="space-y-2 lg:space-y-3 text-xs sm:text-sm lg:text-base text-sky-100/60"
+              >
                 <li>
                   <a href="index.html" class="hover:text-sky-100 transition">
                     Accueil
@@ -909,48 +1001,60 @@
             </nav>
           </div>
 
-          <!-- CTA -->
-
-          <div class="col-span-4">
-            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+          <div class="col-span-7 md:col-span-3 lg:col-span-4">
+            <p
+              class="text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.18em] sm:tracking-[0.2em] lg:tracking-[0.25em] mb-4 lg:mb-6"
+            >
               VOTRE PROCHAIN VOYAGE
             </p>
 
-            <h3 class="text-sky-100 text-2xl">Prêt à découvrir le Japon ?</h3>
+            <h3
+              class="font-serif text-sky-100 text-base sm:text-lg lg:text-2xl"
+            >
+              Prêt à découvrir le Japon ?
+            </h3>
 
             <a
               href="reservation.html"
-              class="inline-flex items-center gap-4 mt-7 px-6 py-3 border border-[#E4464C] rounded-full text-sky-100 hover:bg-[#E4464C] transition duration-300"
+              class="inline-flex items-center justify-center whitespace-nowrap gap-2 lg:gap-4 mt-5 lg:mt-7 px-3 sm:px-4 lg:px-6 py-2 sm:py-2.5 lg:py-3 border border-[#E4464C] rounded-full text-[9px] sm:text-xs lg:text-base text-sky-100 hover:bg-[#E4464C] transition duration-300"
             >
               Réserver votre voyage
-
               <span>→</span>
             </a>
           </div>
         </div>
 
-        <!-- BOTTOM -->
-
         <div
-          class="mt-20 pt-6 border-t border-white/10 flex justify-between items-center"
+          class="grid grid-cols-12 gap-4 mt-12 sm:mt-14 md:mt-16 lg:mt-20 pt-5 lg:pt-6 border-t border-white/10 items-center"
         >
-          <p class="text-sky-100/30 text-sm">© 2026 Tabiji Travel Japan</p>
+          <div class="col-span-12 sm:col-span-6 text-center sm:text-left">
+            <p class="text-sky-100/30 text-2xs sm:text-xs lg:text-sm">
+              © 2026 Tabiji Travel Japan
+            </p>
+          </div>
 
-          <div class="flex items-center gap-5">
-            <span class="text-sky-100/20 text-xs tracking-[0.3em]"> 日本 </span>
+          <div class="col-span-12 sm:col-span-6">
+            <div
+              class="flex items-center justify-center sm:justify-end gap-3 lg:gap-5"
+            >
+              <span
+                class="text-sky-100/20 text-[9px] sm:text-2xs lg:text-xs tracking-[0.3em]"
+              >
+                日本
+              </span>
 
-            <div class="w-10 h-px bg-[#E4464C]/50"></div>
+              <div class="w-6 sm:w-8 lg:w-10 h-px bg-[#E4464C]/50"></div>
 
-            <span class="text-sky-100/30 text-sm"> JAPAN </span>
+              <span class="text-sky-100/30 text-2xs sm:text-xs lg:text-sm">
+                JAPAN
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- ====================================================== -->
-    <!-- JAVASCRIPT -->
-    <!-- ====================================================== -->
-
+    <script type="module" src="src/reveal.js"></script>
     <script type="module" src="src/main.js"></script>
     <script type="module" src="src/cartes.js"></script>
   </body>

@@ -36,6 +36,7 @@ const destinations = {
 };
 
 // Éléments du modal destination
+
 const cityModal = document.querySelector("#cityModal");
 const closeCityModal = document.querySelector("#closeModal");
 
@@ -46,12 +47,12 @@ const cityModalHighlights = document.querySelector("#modalHighlights");
 const cityModalImage = document.querySelector("#modalImage");
 
 // Boutons pour ouvrir les destinations
+
 document.querySelectorAll(".open-modal").forEach((button) => {
   button.addEventListener("click", () => {
     const cityId = button.dataset.city;
     const city = destinations[cityId];
 
-    // Protection si la destination ou le modal n'existe pas
     if (
       !city ||
       !cityModal ||
@@ -77,6 +78,7 @@ document.querySelectorAll(".open-modal").forEach((button) => {
 });
 
 // Fermer le modal destination
+
 if (closeCityModal && cityModal) {
   closeCityModal.addEventListener("click", () => {
     cityModal.classList.add("hidden");
@@ -84,7 +86,8 @@ if (closeCityModal && cityModal) {
   });
 }
 
-// Fermer le modal destination en cliquant à l'extérieur
+// Fermer en cliquant à l'extérieur
+
 if (cityModal) {
   cityModal.addEventListener("click", (event) => {
     if (event.target === cityModal) {
@@ -130,7 +133,6 @@ const packages = {
   },
 };
 
-// Éléments du modal forfait
 const packageModal = document.querySelector("#package-modal");
 const closePackageModal = document.querySelector("#close-package-modal");
 
@@ -141,13 +143,11 @@ const packageCities = document.querySelector("#package-cities");
 const packagePrice = document.querySelector("#package-price");
 const packageMap = document.querySelector("#package-map");
 
-// Boutons pour ouvrir les forfaits
 document.querySelectorAll(".open-package-modal").forEach((button) => {
   button.addEventListener("click", () => {
     const packageId = button.dataset.package;
     const selectedPackage = packages[packageId];
 
-    // Protection si le forfait ou le modal n'existe pas
     if (
       !selectedPackage ||
       !packageModal ||
@@ -174,7 +174,6 @@ document.querySelectorAll(".open-package-modal").forEach((button) => {
   });
 });
 
-// Fermer le modal forfait avec X
 if (closePackageModal && packageModal) {
   closePackageModal.addEventListener("click", () => {
     packageModal.classList.add("hidden");
@@ -182,7 +181,6 @@ if (closePackageModal && packageModal) {
   });
 }
 
-// Fermer le modal forfait en cliquant à l'extérieur
 if (packageModal) {
   packageModal.addEventListener("click", (event) => {
     if (event.target === packageModal) {
@@ -200,10 +198,8 @@ const reservationForm = document.querySelector("#reservation-form");
 
 if (reservationForm) {
   reservationForm.addEventListener("submit", (event) => {
-    // Empêche le rechargement de la page
     event.preventDefault();
 
-    // Supprime les anciennes erreurs
     clearErrors();
 
     let formIsValid = true;
@@ -231,16 +227,18 @@ if (reservationForm) {
     // ==================================================
 
     const departureDate = reservationForm.querySelector("#date-depart");
-
     const travelers = reservationForm.querySelector("#voyageurs");
-
     const travelType = reservationForm.querySelector("#type-voyage");
-
     const budget = reservationForm.querySelector("#budget");
+
+    // NOUVEAUX CHAMPS
+    const accommodation = reservationForm.querySelector("#hebergement");
+    const pace = reservationForm.querySelector("#rythme");
 
     const preferences = reservationForm.querySelector("#preferences");
 
     // DATE DE DÉPART
+
     if (!departureDate.value) {
       formIsValid = false;
 
@@ -252,7 +250,6 @@ if (reservationForm) {
 
       today.setHours(0, 0, 0, 0);
 
-      // La date doit être APRÈS aujourd'hui
       if (selectedDate <= today) {
         formIsValid = false;
 
@@ -261,6 +258,7 @@ if (reservationForm) {
     }
 
     // NOMBRE DE VOYAGEURS
+
     if (!travelers.value) {
       formIsValid = false;
 
@@ -268,6 +266,7 @@ if (reservationForm) {
     }
 
     // TYPE DE VOYAGE
+
     if (!travelType.value) {
       formIsValid = false;
 
@@ -275,6 +274,7 @@ if (reservationForm) {
     }
 
     // BUDGET
+
     if (!budget.value) {
       formIsValid = false;
 
@@ -282,20 +282,37 @@ if (reservationForm) {
     }
 
     // ==================================================
+    // NOUVEAU — HÉBERGEMENT
+    // ==================================================
+
+    if (!accommodation.value) {
+      formIsValid = false;
+
+      showError(accommodation, "Veuillez sélectionner un type d'hébergement.");
+    }
+
+    // ==================================================
+    // NOUVEAU — RYTHME DU VOYAGE
+    // ==================================================
+
+    if (!pace.value) {
+      formIsValid = false;
+
+      showError(pace, "Veuillez sélectionner le rythme de votre voyage.");
+    }
+
+    // ==================================================
     // 03 — INFORMATIONS PERSONNELLES
     // ==================================================
 
     const firstName = reservationForm.querySelector("#prenom");
-
     const lastName = reservationForm.querySelector("#nom");
-
     const email = reservationForm.querySelector("#email");
-
     const phone = reservationForm.querySelector("#telephone");
-
     const message = reservationForm.querySelector("#message");
 
     // PRÉNOM
+
     if (firstName.value.trim() === "") {
       formIsValid = false;
 
@@ -307,6 +324,7 @@ if (reservationForm) {
     }
 
     // NOM
+
     if (lastName.value.trim() === "") {
       formIsValid = false;
 
@@ -318,6 +336,7 @@ if (reservationForm) {
     }
 
     // COURRIEL
+
     if (email.value.trim() === "") {
       formIsValid = false;
 
@@ -329,6 +348,7 @@ if (reservationForm) {
     }
 
     // TÉLÉPHONE
+
     if (phone.value.trim() === "") {
       formIsValid = false;
 
@@ -364,7 +384,6 @@ if (reservationForm) {
       ...reservationForm.querySelectorAll('input[name="interets"]:checked'),
     ].map((interest) => interest.value);
 
-    // Création de l'objet contenant toutes les informations
     const reservation = {
       package: selectedPackage.value,
 
@@ -373,6 +392,11 @@ if (reservationForm) {
         travelers: travelers.value,
         travelType: travelType.value,
         budget: budget.value,
+
+        // NOUVEAUX CHAMPS
+        accommodation: accommodation.value,
+        pace: pace.value,
+
         interests: interests,
         preferences: preferences.value.trim(),
       },
@@ -386,13 +410,10 @@ if (reservationForm) {
       },
     };
 
-    // Affiche les informations dans la console
     console.log("Réservation :", reservation);
 
-    // Affiche la confirmation
     showSuccess();
 
-    // Vide le formulaire
     reservationForm.reset();
   });
 }
@@ -412,10 +433,8 @@ function validateEmail(email) {
 // ======================================================
 
 function validatePhone(phone) {
-  // On enlève tous les caractères sauf les chiffres
   const numbersOnly = phone.replace(/\D/g, "");
 
-  // Entre 10 et 15 chiffres
   return numbersOnly.length >= 10 && numbersOnly.length <= 15;
 }
 
@@ -428,9 +447,7 @@ function showError(element, message) {
     return;
   }
 
-  // ==================================================
-  // CAS SPÉCIAL : FORFAITS RADIO
-  // ==================================================
+  // CAS SPÉCIAL : RADIO
 
   if (element.type === "radio") {
     const section = element.closest("section");
@@ -439,7 +456,6 @@ function showError(element, message) {
       return;
     }
 
-    // On place l'erreur après la grille des forfaits
     const grid = section.querySelector(".grid");
 
     if (!grid) {
@@ -457,9 +473,7 @@ function showError(element, message) {
     return;
   }
 
-  // ==================================================
   // INPUT / SELECT / TEXTAREA
-  // ==================================================
 
   const container = element.parentElement;
 
@@ -475,7 +489,6 @@ function showError(element, message) {
 
   container.appendChild(error);
 
-  // Change la bordure du champ
   element.classList.remove("border-white/20");
 
   element.classList.add("border-[#E4464C]");
@@ -486,12 +499,10 @@ function showError(element, message) {
 // ======================================================
 
 function clearErrors() {
-  // Supprime les messages
   document.querySelectorAll(".form-error").forEach((error) => {
     error.remove();
   });
 
-  // Remet les bordures normales
   document
     .querySelectorAll(
       "#reservation-form input, " +
@@ -534,16 +545,18 @@ function showSuccess() {
         border
         border-white/10
         rounded-3xl
-        p-10
+        p-6
+        sm:p-8
+        lg:p-10
         text-center
         shadow-2xl
       "
     >
-
       <p
         class="
           text-[#E4464C]
-          text-sm
+          text-xs
+          sm:text-sm
           tracking-[0.3em]
           mb-5
         "
@@ -554,7 +567,8 @@ function showSuccess() {
       <h2
         class="
           text-sky-100
-          text-3xl
+          text-2xl
+          sm:text-3xl
           mb-4
         "
       >
@@ -564,6 +578,8 @@ function showSuccess() {
       <p
         class="
           text-sky-100/50
+          text-sm
+          sm:text-base
           leading-relaxed
           mb-8
         "
@@ -580,8 +596,11 @@ function showSuccess() {
           border
           border-[#E4464C]
           rounded-full
-          px-7
+          px-5
+          sm:px-7
           py-3
+          text-sm
+          sm:text-base
           text-sky-100
           hover:bg-[#E4464C]
           transition
@@ -590,7 +609,6 @@ function showSuccess() {
       >
         Continuer
       </button>
-
     </div>
   `;
 

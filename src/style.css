@@ -47,3 +47,19 @@ body {
   height: 100vh;
   z-index: 0;
 }
+
+/* État initial des sections */
+section.section-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+/* Quand la section entre dans l'écran */
+section.section-reveal.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

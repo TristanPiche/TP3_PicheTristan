@@ -4,157 +4,195 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil | Tabjiji Travel Japan</title>
+    <meta
+      name="description"
+      content="Découvrez Tabiji Travel Japan et explorez le Japon à travers des voyages uniques mêlant culture, traditions, villes modernes et paysages."
+    />
+    <link rel="icon" type="image/png" href="/images/logo_Tabiji_Travel.png" />
+    <title>Accueil | Tabiji Travel Japan</title>
   </head>
-  <body>
+
+  <body class="font-sans">
     <canvas class="mt-5" id="three-canvas"></canvas>
+
     <header class="fixed top-0 left-0 w-full z-50">
-      <div class="flex justify-between items-center container mx-auto mt-7">
-        <div class="flex items-center gap-7">
-          <img
-            src="/images/logo_Tabiji_Travel.png"
-            alt="Torii en version logo de style animé"
-            class="max-w-25"
-          />
-          <a href="index.html" class="text-3xl text-sky-100"
-            >Tabiji Travel Japan</a
-          >
-        </div>
-        <div>
-          <nav>
-            <ul class="flex gap-20 text-md text-sky-100">
+      <div class="container mx-auto px-5 md:px-8 xl:px-0 mt-4 lg:mt-7">
+        <div class="grid grid-cols-12 items-center gap-4">
+          <div class="col-span-12 lg:col-span-4">
+            <div
+              class="flex items-center justify-center lg:justify-start gap-3 lg:gap-7"
+            >
+              <img
+                src="/images/logo_Tabiji_Travel.png"
+                alt="Torii en version logo de style animé"
+                class="w-14 md:w-20 lg:w-25"
+              />
+
+              <a
+                href="index.html"
+                class="font-serif font-semibold text-xl md:text-2xl lg:text-3xl text-sky-100 whitespace-nowrap"
+              >
+                Tabiji Travel Japan
+              </a>
+            </div>
+          </div>
+
+          <nav class="col-span-12 lg:col-span-8">
+            <ul
+              class="font-sans flex flex-wrap justify-center lg:justify-end items-center gap-x-3 gap-y-2 md:gap-x-6 lg:gap-x-8 xl:gap-x-12 text-xs md:text-sm lg:text-md text-sky-100"
+            >
               <li>
                 <a
                   href="index.html"
-                  class="border border-[#E4464C] text-[#E4464C] rounded-3xl p-2 transition duration-200 ease-in-out hover:bg-[#E4464C] hover:text-white"
-                  >Accueil</a
+                  class="block border border-[#E4464C] text-[#E4464C] rounded-3xl px-3 py-2 transition duration-200 hover:bg-[#E4464C] hover:text-white"
                 >
+                  Accueil
+                </a>
               </li>
+
               <li>
                 <a
                   href="apropos.html"
-                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
-                  >Destinations</a
+                  class="block border border-transparent rounded-3xl px-3 py-2 hover:border-white transition duration-200"
                 >
+                  Destinations
+                </a>
               </li>
+
               <li>
                 <a
                   href="contact.html"
-                  class="border border-transparent rounded-3xl hover:rounded-3xl hover:border-white p-2 transition duration-200 ease-in-out"
-                  >Nous Contacter</a
+                  class="block border border-transparent rounded-3xl px-3 py-2 hover:border-white transition duration-200"
                 >
+                  Nous Contacter
+                </a>
               </li>
+
               <li>
                 <a
                   href="reservation.html"
-                  n
-                  class="border p-2.5 rounded-3xl transition duration-200 ease-in-out hover:bg-[#E4464C] hover:border-[#E4464C]"
-                  >Réserver Maintenant</a
+                  class="block border rounded-3xl px-3 py-2 transition duration-200 hover:bg-[#E4464C] hover:border-[#E4464C]"
                 >
+                  Réserver Maintenant
+                </a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main class="relative z-10 container mx-auto">
+
+    <main class="relative z-10 container mx-auto px-5 md:px-8 xl:px-0">
       <section
-        class="min-h-screen flex items-center snap-start"
         id="sectionHero"
+        class="min-h-screen snap-start relative grid grid-cols-12 items-start pt-36 sm:pt-44 md:pt-0 md:items-center"
       >
-        <div class="-translate-y-28">
-          <h1 class="text-5xl font-bold text-sky-100">
-            Votre voyage <br />
+        <div
+          class="col-span-12 relative z-20 text-center px-6 md:col-span-6 md:text-left md:px-0 md:-translate-y-32 lg:col-start-1 lg:col-span-4 xl:col-span-5 xl:translate-y-0"
+        >
+          <h1
+            class="font-serif text-2xl font-bold text-sky-100 leading-tight sm:text-3xl md:text-4xl xl:text-5xl"
+          >
+            Votre voyage
+            <br />
             commence ici
           </h1>
-          <p class="mt-5 text-md text-sky-100">
-            Découvrez le Japon autrement et vivez des expériences
-            <br />inoubliables au coeur de la tradition
+
+          <p
+            class="font-sans mt-3 mx-auto max-w-70 text-[11px] leading-5 text-sky-100 sm:text-xs sm:max-w-[320px] md:mx-0 md:mt-5 md:text-sm lg:max-w-60 xl:text-base xl:max-w-lg"
+          >
+            Découvrez le Japon autrement et vivez des expériences inoubliables
+            au coeur de la tradition
           </p>
-          <div class="mt-10">
+
+          <div class="mt-4 sm:mt-5 md:mt-8 xl:mt-10">
             <a
               href="reservation.html"
-              class="text-xl bg-[#E4464C] p-2.5 rounded-3xl text-sky-100 hover:bg-transparent border border-transparent transition duration-200 ease-in-out hover:border-[#e4464c]"
-              >Réserver Maintenant</a
+              class="font-sans inline-block text-xs px-4 py-2 sm:text-sm sm:px-5 sm:py-2.5 md:text-base xl:text-xl bg-[#E4464C] rounded-3xl text-sky-100 hover:bg-transparent border border-transparent hover:border-[#E4464C] transition duration-200"
             >
+              Réserver Maintenant
+            </a>
           </div>
         </div>
       </section>
+
       <section
         id="section2"
-        class="min-h-screen snap-start flex items-center justify-center relative"
+        class="section-reveal min-h-screen snap-start relative grid grid-cols-12 items-center pt-36 pb-10 xl:pt-32"
       >
-        <div class="w-full">
-          <!-- Petit numéro de section -->
-          <div class="flex items-center justify-center gap-4 mb-4">
-            <div class="w-12 h-px bg-[#E4464C]"></div>
+        <div class="col-span-12 w-full">
+          <div class="flex items-center justify-center gap-3 md:gap-4 mb-4">
+            <div class="w-6 md:w-12 h-px bg-[#E4464C]"></div>
 
-            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+            <p
+              class="font-sans text-[#E4464C] text-xs md:text-sm tracking-[0.2em] md:tracking-[0.35em] uppercase whitespace-nowrap"
+            >
               02 — Expériences
             </p>
 
-            <div class="w-12 h-px bg-[#E4464C]"></div>
+            <div class="w-6 md:w-12 h-px bg-[#E4464C]"></div>
           </div>
 
-          <!-- Titre -->
-          <div class="text-center mb-12">
-            <h2 class="text-sky-100 text-4xl font-semibold">
+          <div class="text-center mb-8 md:mb-12">
+            <h2
+              class="font-serif text-sky-100 text-3xl md:text-4xl font-semibold leading-tight"
+            >
               Découvrez le Japon autrement
             </h2>
 
-            <p class="text-sky-100/60 mt-3 text-lg">
+            <p class="font-sans text-sky-100/60 mt-3 text-base md:text-lg">
               Des expériences pensées pour découvrir le Japon à votre façon.
             </p>
           </div>
 
-          <!-- CARTES -->
-          <div class="grid grid-cols-12 gap-8">
-            <!-- CARTE 1 -->
-            <div class="col-span-4">
+          <div class="grid grid-cols-12 gap-5 md:gap-6 lg:gap-8">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4">
               <div
-                class="group bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
+                class="group h-full bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
               >
-                <!-- IMAGE -->
-                <div class="relative h-60 overflow-hidden">
+                <div class="relative h-48 md:h-52 lg:h-60 overflow-hidden">
                   <img
                     src="/images/image_immersion.jpeg"
                     alt="Torii au milieu d'un lac"
                     class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
                   />
 
-                  <!-- numéro -->
                   <span
-                    class="absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
+                    class="font-sans absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
                   >
                     01
                   </span>
                 </div>
 
-                <!-- TEXTE -->
-                <div class="p-7">
+                <div class="p-5 md:p-6 lg:p-7">
                   <div class="flex items-center gap-3 mb-3">
                     <div class="w-7 h-px bg-[#E4464C]"></div>
 
-                    <span class="text-[#E4464C] text-xs tracking-[0.25em]">
+                    <span
+                      class="font-sans text-[#E4464C] text-xs tracking-[0.25em]"
+                    >
                       IMMERSION
                     </span>
                   </div>
 
-                  <h3 class="text-3xl text-sky-100">Immersion</h3>
+                  <h3 class="font-serif text-2xl lg:text-3xl text-sky-100">
+                    Immersion
+                  </h3>
 
-                  <p class="mt-3 text-sky-100/60 text-lg">
+                  <p
+                    class="font-sans mt-3 text-sky-100/60 text-base lg:text-lg"
+                  >
                     Voyagez au-delà des incontournables.
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- CARTE 2 -->
-            <div class="col-span-4">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4">
               <div
-                class="group bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
+                class="group h-full bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
               >
-                <div class="relative h-60 overflow-hidden">
+                <div class="relative h-48 md:h-52 lg:h-60 overflow-hidden">
                   <img
                     src="/images/image_sur_mesure.jpg"
                     alt="Mont Fuji et pagode"
@@ -162,36 +200,41 @@
                   />
 
                   <span
-                    class="absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
+                    class="font-sans absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
                   >
                     02
                   </span>
                 </div>
 
-                <div class="p-7">
+                <div class="p-5 md:p-6 lg:p-7">
                   <div class="flex items-center gap-3 mb-3">
                     <div class="w-7 h-px bg-[#E4464C]"></div>
 
-                    <span class="text-[#E4464C] text-xs tracking-[0.25em]">
+                    <span
+                      class="font-sans text-[#E4464C] text-xs tracking-[0.25em]"
+                    >
                       SUR MESURE
                     </span>
                   </div>
 
-                  <h3 class="text-3xl text-sky-100">Sur mesure</h3>
+                  <h3 class="font-serif text-2xl lg:text-3xl text-sky-100">
+                    Sur mesure
+                  </h3>
 
-                  <p class="mt-3 text-sky-100/60 text-lg">
+                  <p
+                    class="font-sans mt-3 text-sky-100/60 text-base lg:text-lg"
+                  >
                     Un voyage qui vous ressemble.
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- CARTE 3 -->
-            <div class="col-span-4">
+            <div class="col-span-12 md:col-span-12 lg:col-span-4">
               <div
-                class="group bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
+                class="group h-full bg-[#101d38]/75 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden transition duration-500 hover:-translate-y-2 hover:border-[#E4464C]/50"
               >
-                <div class="relative h-60 overflow-hidden">
+                <div class="relative h-48 md:h-60 lg:h-60 overflow-hidden">
                   <img
                     src="/images/image_authenticite.jpg"
                     alt="Rue traditionnelle japonaise"
@@ -199,24 +242,30 @@
                   />
 
                   <span
-                    class="absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
+                    class="font-sans absolute top-4 left-4 text-white/80 text-sm border border-white/30 rounded-full px-3 py-1 backdrop-blur-md bg-[#101d38]/30"
                   >
                     03
                   </span>
                 </div>
 
-                <div class="p-7">
+                <div class="p-5 md:p-6 lg:p-7">
                   <div class="flex items-center gap-3 mb-3">
                     <div class="w-7 h-px bg-[#E4464C]"></div>
 
-                    <span class="text-[#E4464C] text-xs tracking-[0.25em]">
+                    <span
+                      class="font-sans text-[#E4464C] text-xs tracking-[0.25em]"
+                    >
                       AUTHENTICITÉ
                     </span>
                   </div>
 
-                  <h3 class="text-3xl text-sky-100">Authenticité</h3>
+                  <h3 class="font-serif text-2xl lg:text-3xl text-sky-100">
+                    Authenticité
+                  </h3>
 
-                  <p class="mt-3 text-sky-100/60 text-lg">
+                  <p
+                    class="font-sans mt-3 text-sky-100/60 text-base lg:text-lg"
+                  >
                     Découvrez l'essence du Japon.
                   </p>
                 </div>
@@ -224,326 +273,350 @@
             </div>
           </div>
 
-          <!-- décoration du bas -->
-          <div class="flex items-center justify-center gap-5 mt-10">
-            <div class="w-20 h-px bg-gray-800/50"></div>
+          <div
+            class="font-sans flex items-center justify-center gap-3 md:gap-5 mt-10"
+          >
+            <div class="w-10 md:w-20 h-px bg-gray-800/50"></div>
 
-            <span class="text-gray-800/60 text-sm tracking-[0.4em]">
+            <span
+              class="text-gray-800/60 text-xs md:text-sm tracking-[0.3em] md:tracking-[0.4em]"
+            >
               旅をする
             </span>
 
-            <div class="w-20 h-px bg-gray-800/50"></div>
+            <div class="w-10 md:w-20 h-px bg-gray-800/50"></div>
           </div>
         </div>
       </section>
+
       <section
         id="section3"
-        class="min-h-screen snap-start flex items-center justify-center relative"
+        class="section-reveal min-h-screen snap-start relative grid grid-cols-12 items-center pt-36 pb-10 xl:pt-32"
       >
-        <div class="w-full">
-          <!-- Numéro de section -->
-          <div class="flex items-center justify-center gap-4 mb-4">
-            <div class="w-12 h-px bg-[#E4464C]"></div>
+        <div class="col-span-12 w-full">
+          <div class="flex items-center justify-center gap-3 md:gap-4 mb-4">
+            <div class="w-6 md:w-12 h-px bg-[#E4464C]"></div>
 
-            <p class="text-[#E4464C] text-sm tracking-[0.35em] uppercase">
+            <p
+              class="font-sans text-[#E4464C] text-xs md:text-sm tracking-[0.2em] md:tracking-[0.35em] uppercase whitespace-nowrap"
+            >
               03 — Inspiration
             </p>
 
-            <div class="w-12 h-px bg-[#E4464C]"></div>
+            <div class="w-6 md:w-12 h-px bg-[#E4464C]"></div>
           </div>
 
-          <!-- Titre -->
-          <div class="text-center mb-10">
-            <h2 class="text-sky-100 text-4xl font-semibold">
+          <div class="text-center mb-8 md:mb-6">
+            <h2
+              class="font-serif text-sky-100 text-3xl md:text-4xl font-semibold leading-tight"
+            >
               Le Japon sous toutes ses facettes
             </h2>
 
-            <p class="text-sky-100/60 mt-3 text-lg">
+            <p class="font-sans text-sky-100/60 mt-3 text-base md:text-lg">
               Des paysages uniques, entre traditions et modernité.
             </p>
           </div>
 
-          <!-- Zone du carousel -->
-          <div class="relative max-w-5xl mx-auto">
-            <!-- Petit texte décoratif vertical gauche -->
-            <div
-              class="absolute -left-16 top-1/2 -translate-y-1/2 hidden xl:flex flex-col items-center gap-4"
-            >
-              <span
-                class="text-sky-100/50 text-xs tracking-[0.3em] [writing-mode:vertical-rl]"
-              >
-                日本を発見
-              </span>
-
-              <div class="w-px h-20 bg-sky-100/20"></div>
-            </div>
-
-            <!-- Cadre extérieur -->
-            <div
-              class="relative p-3 bg-[#101d38]/40 backdrop-blur-sm border border-white/10 rounded-2xl"
-            >
-              <!-- Accent coin supérieur gauche -->
-              <div
-                class="absolute -top-px -left-px w-20 h-20 border-t-2 border-l-2 border-[#E4464C] rounded-tl-2xl z-30 pointer-events-none"
-              ></div>
-
-              <!-- Accent coin inférieur droit -->
-              <div
-                class="absolute -bottom-px -right-px w-20 h-20 border-b-2 border-r-2 border-[#E4464C] rounded-br-2xl z-30 pointer-events-none"
-              ></div>
-
-              <!-- FLOWBITE CAROUSEL -->
-              <div
-                id="default-carousel"
-                class="relative w-full"
-                data-carousel="slide"
-              >
-                <!-- Carousel wrapper -->
-                <div class="relative h-125 overflow-hidden rounded-xl">
-                  <!-- IMAGE 1 -->
-                  <div
-                    class="duration-700 ease-in-out"
-                    data-carousel-item="active"
-                  >
-                    <img
-                      src="/images/image1.jpeg"
-                      class="absolute block w-full h-full object-cover"
-                      alt="Paysage du Japon"
-                    />
-
-                    <!-- léger gradient sur l'image -->
-                    <div
-                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
-                    ></div>
-                  </div>
-
-                  <!-- IMAGE 2 -->
-                  <div
-                    class="hidden duration-700 ease-in-out"
-                    data-carousel-item
-                  >
-                    <img
-                      src="/images/image2.jpeg"
-                      class="absolute block w-full h-full object-cover"
-                      alt="Paysage du Japon"
-                    />
-
-                    <div
-                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
-                    ></div>
-                  </div>
-
-                  <!-- IMAGE 3 -->
-                  <div
-                    class="hidden duration-700 ease-in-out"
-                    data-carousel-item
-                  >
-                    <img
-                      src="/images/image3.jpeg"
-                      class="absolute block w-full h-full object-cover"
-                      alt="Paysage du Japon"
-                    />
-
-                    <div
-                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
-                    ></div>
-                  </div>
-
-                  <!-- IMAGE 4 -->
-                  <div
-                    class="hidden duration-700 ease-in-out"
-                    data-carousel-item
-                  >
-                    <img
-                      src="/images/image4.jpeg"
-                      class="absolute block w-full h-full object-cover"
-                      alt="Paysage du Japon"
-                    />
-
-                    <div
-                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
-                    ></div>
-                  </div>
-
-                  <!-- IMAGE 5 -->
-                  <div
-                    class="hidden duration-700 ease-in-out"
-                    data-carousel-item
-                  >
-                    <img
-                      src="/images/image5.jpeg"
-                      class="absolute block w-full h-full object-cover"
-                      alt="Paysage du Japon"
-                    />
-
-                    <div
-                      class="absolute inset-0 bg-gradient-to-t from-[#101d38]/60 via-transparent to-transparent"
-                    ></div>
-                  </div>
-                </div>
-
-                <!-- Indicateurs -->
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 lg:col-start-2 lg:col-span-10">
+              <div class="relative">
                 <div
-                  class="absolute z-30 flex -translate-x-1/2 bottom-6 left-1/2 space-x-3"
+                  class="absolute -left-16 top-1/2 -translate-y-1/2 hidden xl:flex flex-col items-center gap-4"
                 >
-                  <button
-                    type="button"
-                    class="w-2.5 h-2.5 rounded-full"
-                    aria-label="Slide 1"
-                    data-carousel-slide-to="0"
-                  ></button>
+                  <span
+                    class="font-sans text-sky-100/50 text-xs tracking-[0.3em] [writing-mode:vertical-rl]"
+                  >
+                    日本を発見
+                  </span>
 
-                  <button
-                    type="button"
-                    class="w-2.5 h-2.5 rounded-full"
-                    aria-label="Slide 2"
-                    data-carousel-slide-to="1"
-                  ></button>
-
-                  <button
-                    type="button"
-                    class="w-2.5 h-2.5 rounded-full"
-                    aria-label="Slide 3"
-                    data-carousel-slide-to="2"
-                  ></button>
-
-                  <button
-                    type="button"
-                    class="w-2.5 h-2.5 rounded-full"
-                    aria-label="Slide 4"
-                    data-carousel-slide-to="3"
-                  ></button>
-
-                  <button
-                    type="button"
-                    class="w-2.5 h-2.5 rounded-full"
-                    aria-label="Slide 5"
-                    data-carousel-slide-to="4"
-                  ></button>
+                  <div class="w-px h-20 bg-sky-100/20"></div>
                 </div>
 
-                <!-- Bouton précédent -->
-                <button
-                  type="button"
-                  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-5 cursor-pointer group"
-                  data-carousel-prev
+                <div
+                  class="relative p-2 md:p-3 bg-[#101d38]/40 backdrop-blur-sm border border-white/10 rounded-2xl"
                 >
-                  <span
-                    class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#101d38]/50 border border-white/20 backdrop-blur-md group-hover:bg-[#E4464C] transition"
-                  >
-                    <svg
-                      class="w-4 h-4 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 6 10"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 1 1 5l4 4"
-                      />
-                    </svg>
-                  </span>
-                </button>
+                  <div
+                    class="absolute -top-px -left-px w-12 h-12 md:w-20 md:h-20 border-t-2 border-l-2 border-[#E4464C] rounded-tl-2xl z-30 pointer-events-none"
+                  ></div>
 
-                <!-- Bouton suivant -->
-                <button
-                  type="button"
-                  class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-5 cursor-pointer group"
-                  data-carousel-next
+                  <div
+                    class="absolute -bottom-px -right-px w-12 h-12 md:w-20 md:h-20 border-b-2 border-r-2 border-[#E4464C] rounded-br-2xl z-30 pointer-events-none"
+                  ></div>
+
+                  <div
+                    id="default-carousel"
+                    class="relative w-full"
+                    data-carousel="slide"
+                  >
+                    <div
+                      class="relative h-64 sm:h-72 md:h-80 lg:h-90 xl:h-105 2xl:h-125 overflow-hidden rounded-xl"
+                    >
+                      <div
+                        class="duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="/images/image1.jpeg"
+                          class="absolute block w-full h-full object-cover"
+                          alt="Paysage du Japon"
+                        />
+
+                        <div
+                          class="absolute inset-0 bg-linear-to-t from-[#101d38]/60 via-transparent to-transparent"
+                        ></div>
+                      </div>
+
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="/images/image2.jpeg"
+                          class="absolute block w-full h-full object-cover"
+                          alt="Paysage du Japon"
+                        />
+
+                        <div
+                          class="absolute inset-0 bg-linear-to-t from-[#101d38]/60 via-transparent to-transparent"
+                        ></div>
+                      </div>
+
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="/images/image3.jpeg"
+                          class="absolute block w-full h-full object-cover"
+                          alt="Paysage du Japon"
+                        />
+
+                        <div
+                          class="absolute inset-0 bg-linear-to-t from-[#101d38]/60 via-transparent to-transparent"
+                        ></div>
+                      </div>
+
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="/images/image4.jpeg"
+                          class="absolute block w-full h-full object-cover"
+                          alt="Paysage du Japon"
+                        />
+
+                        <div
+                          class="absolute inset-0 bg-linear-to-t from-[#101d38]/60 via-transparent to-transparent"
+                        ></div>
+                      </div>
+
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="/images/image5.jpeg"
+                          class="absolute block w-full h-full object-cover"
+                          alt="Paysage du Japon"
+                        />
+
+                        <div
+                          class="absolute inset-0 bg-linear-to-t from-[#101d38]/60 via-transparent to-transparent"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="absolute z-30 flex -translate-x-1/2 bottom-4 md:bottom-6 left-1/2 space-x-2 md:space-x-3"
+                    >
+                      <button
+                        type="button"
+                        class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full"
+                        aria-label="Slide 1"
+                        data-carousel-slide-to="0"
+                      ></button>
+
+                      <button
+                        type="button"
+                        class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full"
+                        aria-label="Slide 2"
+                        data-carousel-slide-to="1"
+                      ></button>
+
+                      <button
+                        type="button"
+                        class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full"
+                        aria-label="Slide 3"
+                        data-carousel-slide-to="2"
+                      ></button>
+
+                      <button
+                        type="button"
+                        class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full"
+                        aria-label="Slide 4"
+                        data-carousel-slide-to="3"
+                      ></button>
+
+                      <button
+                        type="button"
+                        class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full"
+                        aria-label="Slide 5"
+                        data-carousel-slide-to="4"
+                      ></button>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="absolute top-0 inset-s-0 z-30 flex items-center justify-center h-full px-2 md:px-5 cursor-pointer group"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-9 h-9 md:w-11 md:h-11 rounded-full bg-[#101d38]/50 border border-white/20 backdrop-blur-md group-hover:bg-[#E4464C] transition"
+                      >
+                        <svg
+                          class="w-3 h-3 md:w-4 md:h-4 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 1 1 5l4 4"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="absolute top-0 inset-e-0 z-30 flex items-center justify-center h-full px-2 md:px-5 cursor-pointer group"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-9 h-9 md:w-11 md:h-11 rounded-full bg-[#101d38]/50 border border-white/20 backdrop-blur-md group-hover:bg-[#E4464C] transition"
+                      >
+                        <svg
+                          class="w-3 h-3 md:w-4 md:h-4 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="font-sans grid grid-cols-12 gap-3 mt-2 px-1 md:px-3"
                 >
-                  <span
-                    class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#101d38]/50 border border-white/20 backdrop-blur-md group-hover:bg-[#E4464C] transition"
-                  >
-                    <svg
-                      class="w-4 h-4 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 6 10"
+                  <div class="col-span-12 sm:col-span-8">
+                    <div
+                      class="flex items-center justify-center sm:justify-start gap-3"
                     >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="m1 9 4-4-4-4"
-                      />
-                    </svg>
-                  </span>
-                </button>
+                      <div class="w-8 h-px bg-[#E4464C]"></div>
+
+                      <p
+                        class="text-sky-100/50 text-2xs xl:text-xs tracking-[0.15em] xl:tracking-[0.25em] uppercase"
+                      >
+                        Tabiji Travel Japan
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col-span-12 sm:col-span-4 text-center sm:text-right"
+                  >
+                    <p class="text-sky-100/50 text-sm">日本 • JAPAN</p>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <!-- Petit détail sous le carousel -->
-            <div class="flex items-center justify-between mt-5 px-3">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-px bg-[#E4464C]"></div>
-
-                <p class="text-sky-100/50 text-xs tracking-[0.25em] uppercase">
-                  Tabiji Travel Japan
-                </p>
-              </div>
-
-              <p class="text-sky-100/50 text-sm">日本 • JAPAN</p>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="relative z-10 overflow-hidden bg-[#101d38]/90 snap-start">
-      <!-- Décoration rouge -->
+
+    <footer
+      class="font-sans relative z-10 overflow-hidden bg-[#101d38]/90 snap-start"
+    >
       <div
         class="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-[#E4464C]/10 blur-3xl pointer-events-none"
       ></div>
 
-      <div class="container mx-auto pt-24 pb-8">
-        <!-- Intro -->
-        <div class="mb-20">
-          <div class="flex items-center gap-4 mb-5">
-            <div class="w-12 h-px bg-[#E4464C]"></div>
+      <div
+        class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-0 pt-14 sm:pt-16 md:pt-20 lg:pt-24 pb-8"
+      >
+        <div class="mb-12 sm:mb-14 md:mb-16 lg:mb-20">
+          <div class="flex items-center gap-3 lg:gap-4 mb-4 lg:mb-5">
+            <div class="w-8 sm:w-10 lg:w-12 h-px bg-[#E4464C]"></div>
 
-            <p class="text-[#E4464C] text-sm tracking-[0.35em]">旅の終わり</p>
+            <p
+              class="text-[#E4464C] text-xs lg:text-sm tracking-[0.25em] lg:tracking-[0.35em]"
+            >
+              旅の終わり
+            </p>
           </div>
 
-          <h2 class="text-sky-100 text-5xl max-w-2xl leading-tight">
+          <h2
+            class="font-serif text-sky-100 text-3xl sm:text-4xl lg:text-5xl max-w-2xl leading-tight"
+          >
             La fin du voyage,
             <br />
+
             <span class="text-sky-100/40">
               le début d'une autre aventure.
             </span>
           </h2>
         </div>
 
-        <!-- Contenu -->
-        <div class="grid grid-cols-12 gap-10">
-          <!-- Logo + description -->
-          <div class="col-span-5">
-            <div class="flex items-center gap-5">
+        <div class="grid grid-cols-12 gap-y-10 gap-x-5 sm:gap-8 lg:gap-10">
+          <div class="col-span-12 md:col-span-6 lg:col-span-5">
+            <div class="flex items-center gap-3 sm:gap-4 lg:gap-5">
               <img
                 src="/images/logo_Tabiji_Travel.png"
                 alt="Tabiji Travel Japan"
-                class="w-20"
+                class="w-14 sm:w-16 lg:w-20"
               />
 
-              <h3 class="text-sky-100 text-2xl">Tabiji Travel Japan</h3>
+              <h3
+                class="font-serif font-semibold text-sky-100 text-xl lg:text-2xl whitespace-nowrap"
+              >
+                Tabiji Travel Japan
+              </h3>
             </div>
 
-            <p class="text-sky-100/50 mt-6 max-w-md leading-relaxed">
+            <p
+              class="text-sky-100/50 text-xs sm:text-sm lg:text-base mt-4 lg:mt-6 max-w-md leading-relaxed"
+            >
               Des voyages pensés pour découvrir le Japon autrement, entre
               traditions, paysages et expériences authentiques.
             </p>
           </div>
 
-          <!-- Navigation -->
-          <div class="col-span-3">
-            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+          <div class="col-span-5 md:col-span-3 lg:col-span-3">
+            <p
+              class="text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.25em] mb-4 lg:mb-6"
+            >
               EXPLORER
             </p>
 
             <nav>
-              <ul class="space-y-3 text-sky-100/60">
+              <ul
+                class="space-y-2 lg:space-y-3 text-xs sm:text-sm lg:text-base text-sky-100/60"
+              >
                 <li>
                   <a href="index.html" class="hover:text-sky-100 transition">
                     Accueil
@@ -565,42 +638,60 @@
             </nav>
           </div>
 
-          <!-- CTA -->
-          <div class="col-span-4">
-            <p class="text-[#E4464C] text-xs tracking-[0.25em] mb-6">
+          <div class="col-span-7 md:col-span-3 lg:col-span-4">
+            <p
+              class="text-[#E4464C] text-[9px] sm:text-2xs lg:text-xs tracking-[0.18em] sm:tracking-[0.2em] lg:tracking-[0.25em] mb-4 lg:mb-6"
+            >
               VOTRE PROCHAIN VOYAGE
             </p>
 
-            <h3 class="text-sky-100 text-2xl">Prêt à découvrir le Japon ?</h3>
+            <h3
+              class="font-serif text-sky-100 text-base sm:text-lg lg:text-2xl"
+            >
+              Prêt à découvrir le Japon ?
+            </h3>
 
             <a
               href="reservation.html"
-              class="inline-flex items-center gap-4 mt-7 px-6 py-3 border border-[#E4464C] rounded-full text-sky-100 hover:bg-[#E4464C] transition duration-300"
+              class="inline-flex items-center justify-center whitespace-nowrap gap-2 lg:gap-4 mt-5 lg:mt-7 px-3 sm:px-4 lg:px-6 py-2 sm:py-2.5 lg:py-3 border border-[#E4464C] rounded-full text-[9px] sm:text-xs lg:text-base text-sky-100 hover:bg-[#E4464C] transition duration-300"
             >
               Réserver votre voyage
-
               <span>→</span>
             </a>
           </div>
         </div>
 
-        <!-- Bottom -->
         <div
-          class="mt-20 pt-6 border-t border-white/10 flex justify-between items-center"
+          class="grid grid-cols-12 gap-4 mt-12 sm:mt-14 md:mt-16 lg:mt-20 pt-5 lg:pt-6 border-t border-white/10 items-center"
         >
-          <p class="text-sky-100/30 text-sm">© 2026 Tabiji Travel Japan</p>
+          <div class="col-span-12 sm:col-span-6 text-center sm:text-left">
+            <p class="text-sky-100/30 text-2xs sm:text-xs lg:text-sm">
+              © 2026 Tabiji Travel Japan
+            </p>
+          </div>
 
-          <div class="flex items-center gap-5">
-            <span class="text-sky-100/20 text-xs tracking-[0.3em]"> 日本 </span>
+          <div class="col-span-12 sm:col-span-6">
+            <div
+              class="flex items-center justify-center sm:justify-end gap-3 lg:gap-5"
+            >
+              <span
+                class="text-sky-100/20 text-[9px] sm:text-2xs lg:text-xs tracking-[0.3em]"
+              >
+                日本
+              </span>
 
-            <div class="w-10 h-px bg-[#E4464C]/50"></div>
+              <div class="w-6 sm:w-8 lg:w-10 h-px bg-[#E4464C]/50"></div>
 
-            <span class="text-sky-100/30 text-sm"> JAPAN </span>
+              <span class="text-sky-100/30 text-2xs sm:text-xs lg:text-sm">
+                JAPAN
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+    <script type="module" src="src/reveal.js"></script>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
