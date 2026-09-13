@@ -1,45 +1,46 @@
 {
   "name": "Tabiji Travel Japan",
   "short_name": "Tabiji",
-  "id": "/",
-  "start_url": "/index.html",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
   "description": "Découvrez le Japon avec Tabiji Travel Japan et préparez votre prochain voyage.",
   "display": "standalone",
   "background_color": "#101d38",
   "theme_color": "#101d38",
   "icons": [
     {
-      "src": "/icons/icon_1.png",
+      "src": "icons/icon_1.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon_1.png",
+      "src": "icons/icon_1.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/icons/icon_2.png",
+      "src": "icons/icon_2.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon_2.png",
+      "src": "icons/icon_2.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/icons/icon_3.png",
+      "src": "icons/icon_3.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon_3.png",
+      "src": "icons/icon_3.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -47,14 +48,14 @@
   ],
   "screenshots": [
     {
-      "src": "/screenshots/accueil.png",
+      "src": "screenshots/accueil.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Accueil de Tabiji Travel Japan"
     },
     {
-      "src": "/screenshots/accueil_mobile.png",
+      "src": "screenshots/accueil_mobile.png",
       "sizes": "498x842",
       "type": "image/png",
       "label": "Accueil mobile de Tabiji Travel Japan"
